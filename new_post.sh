@@ -10,7 +10,7 @@ while $need_name; do
           echo "---
 title: $post
 date: $(date)
-tags:
+tags: 
 ---" > "./content/posts/$date-$fn.markdown"
           echo "Happy writing."
           need_name=false
