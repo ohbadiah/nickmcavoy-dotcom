@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <title>Nick On Programming: blog</title>
-    <link href="http://nickmcavoy.com/blog/atom.xml" rel="self" />
+    <title>Nick On Programming: Posts tagged adventures of Nick and Matt</title>
+    <link href="http://nickmcavoy.com/blog/tags/adventures%20of%20Nick%20and%20Matt/index.xml" rel="self" />
     <link href="http://nickmcavoy.com/blog" />
-    <id>http://nickmcavoy.com/blog/atom.xml</id>
+    <id>http://nickmcavoy.com/blog/tags/adventures%20of%20Nick%20and%20Matt/index.xml</id>
     <author>
         <name>Nicholas McAvoy</name>
         <email>nicholas.mcavoy@gmail.com</email>
@@ -22,7 +22,7 @@
     </h1>
     <div class="meta">
       <time datetime="2013-10-31" pubdate data-updated="true">31 October 2013</time>
-      <div class="tags"><a href="/tags/Linux/">Linux</a> | <a href="/tags/adventures%20of%20Nick%20and%20Matt/">adventures of Nick and Matt</a></div>
+      <div class="tags"><a href="/tags/Linux/index.html">Linux</a> | <a href="/tags/adventures%20of%20Nick%20and%20Matt/index.html">adventures of Nick and Matt</a></div>
     </div>
   </header>
 
@@ -55,28 +55,6 @@
 <h3 id="in-sum">In Sum</h3>
 <p>Like all projects of this nature, I think Matt and I spent much more time than we intended and also learned more than we expected. The end result was satisfactory. Right now? I’m typing this on my laptop, listening to Gregorian chant on my sweet headphones through the audio jack.</p>
 <p><sup>1</sup> Pun intended.</p>
-</article>
-
-]]></summary>
-</entry>
-<entry>
-    <title>Hello, world!</title>
-    <link href="http://nickmcavoy.com/blog/posts/2013/10/28/hello-blog/" />
-    <id>http://nickmcavoy.com/blog/posts/2013/10/28/hello-blog/</id>
-    <published>2013-10-28T00:00:00Z</published>
-    <updated>2013-10-28T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1 class="entry-title">
-      <a href="/posts/2013/10/28/hello-blog/">Hello, world!</a>
-    </h1>
-    <div class="meta">
-      <time datetime="2013-10-28" pubdate data-updated="true">28 October 2013</time>
-      <div class="tags"><a href="/tags/placeholder/">placeholder</a></div>
-    </div>
-  </header>
-
-  <p>Hello, world!</p>
 </article>
 
 ]]></summary>
