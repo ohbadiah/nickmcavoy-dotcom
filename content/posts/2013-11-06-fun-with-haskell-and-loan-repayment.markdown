@@ -117,7 +117,7 @@ Right The loan will be paid down in 30 years, 1 months.
 The composition of the payoff was  51.602483068740824 % principal, and 48.39751693125917 % interest.
 ```
 
-Yeah, yeah, our `Show` instance is beat. So what. More importantly, you might wonder if we have an off-by-one error: this is supposed to be a 30-year mortgate, not a 361-monther. But there are enough subtle differences between our sim and reality, for instance rounding to the cent, that I'm not going to worry about the small discrepancy.
+Yeah, yeah, our `Show` instance is beat. So what. More importantly, you might wonder if we have an off-by-one error: this is supposed to be a 30-year mortgage, not a 361-monther. But there are enough subtle differences between our sim and reality, for instance rounding to the cent, that I'm not going to worry about the small discrepancy.
 
 Okay, Mrs. Parish, now *I* am handing *you* a moment of truth:
 
@@ -127,7 +127,7 @@ Right The loan will be paid down in 25 years, 4 months.
 The composition of the payoff was  56.62623594541301 % principal, and 43.373764054586985 % interest.
 ```
 
-Lies! I was promised 17 years, not 25! Or so I remember; I could be wrong. In any case, our 25 extra payments over 25 years saved us 45 payments in the long run! The interest proportion of our payment went down 5%! Considering that adding a twelfth to our payments is unlikely to make a significance to our budget, this move easily seems worth making.
+Lies! I was promised 17 years, not 25! Or so I remember; I could be wrong. In any case, our 25 extra payments over 25 years saved us 45 payments in the long run! The interest proportion of our payment went down 5%! Considering that adding a twelfth to our payments is unlikely to make a significant difference to our budget, this move easily seems worth making.
 
 What happens if we are even more aggressive in our extra payments?
 
