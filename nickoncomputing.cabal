@@ -1,7 +1,7 @@
 name:          nickoncomputing
 version:       0.0.0
 description:   A Hakyll blog site 
-copyright:     (c) 2013 Nicholas Mcavoy
+copyright:     (c) 2013 Nicholas McAvoy and Travis Brown
 license-file:  LICENSE.txt
 author:        Nicholas McAvoy
 maintainer:    nicholas.mcavoy@gmail.com
