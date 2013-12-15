@@ -29,5 +29,6 @@ defaultEngineConfiguration = EngineConfiguration
     modulePath = "lib/initializr/war/builder/modules/"
 
 data SiteConfiguration = SiteConfiguration
-  { siteRoot ::  String
+  { siteRoot :: String
+  , subBlogs :: [String]
   }

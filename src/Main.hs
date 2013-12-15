@@ -3,6 +3,8 @@ import Control.Applicative (Alternative (..), (<$>))
 import Control.Monad (filterM)
 import Data.List (intersperse, isSuffixOf)
 import Data.List.Split (splitOn)
+import qualified Data.Map as Map
+import Data.Maybe (fromMaybe)
 import Data.Monoid (mappend)
 import Hakyll
 import Metaplasm.Config
@@ -17,7 +19,9 @@ hakyllConf = defaultConfiguration
 
 siteConf :: SiteConfiguration
 siteConf = SiteConfiguration
-  { siteRoot = "http://www.nickmcavoy.com" }
+  { siteRoot = "http://www.nickmcavoy.com"
+  , subBlogs = ["personal", "tech"]
+  }
 
 feedConf :: String -> FeedConfiguration
 feedConf title = FeedConfiguration
@@ -97,7 +101,7 @@ main = hakyllWith hakyllConf $ do
         >>= renderAtom (feedConf title) feedCtx
 
   match "content/posts/*" $ do
-    route $ directorizeDate `composeRoutes` stripContent `composeRoutes` setExtension "html"
+    route $ directorizeDate `composeRoutes` stripContent `composeRoutes` setExtension "html" `composeRoutes` prefixWithSubblog
     compile $ do
       compiled <- pandocHtml5Compiler
       full <- loadAndApplyTemplate "templates/post.html" postTagsCtx compiled
@@ -170,6 +174,7 @@ postList tags sortFilter = do
 stripContent :: Routes
 stripContent = gsubRoute "content/" $ const ""
 
+-- | Prefix the filename with the given string, ignoring the path on disk.
 prefixRoute :: String -> Routes
 prefixRoute s = customRoute (combine s . takeFileName . toFilePath)
 
@@ -195,3 +200,14 @@ deIndexedUrlField key = field key
 
 dropMore :: Item String -> Item String
 dropMore = fmap (unlines . takeWhile (/= "<!-- MORE -->") . lines)
+
+strTransformToRoutes :: (String -> String) -> Routes
+strTransformToRoutes strTransform = customRoute $ strTransform . toFilePath
+
+prefixWithSubblog :: Routes
+prefixWithSubblog = metadataRoute $ prefixWithStr . whichSubBlog where
+  prefixWithStr :: String -> Routes
+  prefixWithStr s = strTransformToRoutes (combine s)
+
+  whichSubBlog :: Metadata -> String
+  whichSubBlog = (fromMaybe "tech") . (Map.lookup "subblog")
