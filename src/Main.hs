@@ -1,6 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
 import Control.Applicative (Alternative (..), (<$>))
-import Control.Monad (filterM)
+import Control.Monad (filterM, (>=>))
 import Data.List (intersperse, isSuffixOf)
 import Data.List.Split (splitOn)
 import qualified Data.Map as Map
@@ -133,7 +133,7 @@ main = hakyllWith hakyllConf $ do
       tpl <- loadBody "templates/post-item-full.html"
       body <- readTemplate . itemBody <$> getResourceBody
       loadAllSnapshots "content/posts/*" "teaser"
-        >>= fmap (take 100) . recentFirst
+        >>= fmap (take 100) . (recentFirst >=> onlyTechItems)
         >>= applyTemplateList tpl (postCtx tags)
         >>= makeItem
         >>= applyTemplate body (siteCtx `mappend` bodyField "posts")
@@ -219,7 +219,7 @@ getSubblog :: Metadata -> String
 getSubblog = (fromMaybe (defaultSubblog siteConf)) . (Map.lookup "subblog")
 
 filterItemsByMetadata :: (MonadMetadata m, Functor m) => (Metadata -> Bool) -> [Item a] -> m [Item a]
-filterItemsByMetadata pred  = filterM ((fmap pred) . itemsMetadata)
+filterItemsByMetadata p  = filterM ((fmap p) . itemsMetadata)
 
 isSubblogPred :: String -> Metadata -> Bool
 isSubblogPred s = (s ==) . getSubblog
