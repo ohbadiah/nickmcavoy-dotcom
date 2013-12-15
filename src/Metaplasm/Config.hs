@@ -30,5 +30,6 @@ defaultEngineConfiguration = EngineConfiguration
 
 data SiteConfiguration = SiteConfiguration
   { siteRoot :: String
-  , subBlogs :: [String]
+  , subBlogs       :: [String]
+  , defaultSubblog :: String
   }

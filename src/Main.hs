@@ -21,7 +21,10 @@ siteConf :: SiteConfiguration
 siteConf = SiteConfiguration
   { siteRoot = "http://www.nickmcavoy.com"
   , subBlogs = ["personal", "tech"]
+  , defaultSubblog = "tech"
   }
+
+
 
 feedConf :: String -> FeedConfiguration
 feedConf title = FeedConfiguration
@@ -125,7 +128,7 @@ main = hakyllWith hakyllConf $ do
         >>= relativizeUrls
 
   match "content/index.html" $ do
-    route stripContent
+    route $ stripContent `composeRoutes` prefixWithSubblog
     compile $ do
       tpl <- loadBody "templates/post-item-full.html"
       body <- readTemplate . itemBody <$> getResourceBody
@@ -205,9 +208,21 @@ strTransformToRoutes :: (String -> String) -> Routes
 strTransformToRoutes strTransform = customRoute $ strTransform . toFilePath
 
 prefixWithSubblog :: Routes
-prefixWithSubblog = metadataRoute $ prefixWithStr . whichSubBlog where
+prefixWithSubblog = metadataRoute $ prefixWithStr . getSubblog where
   prefixWithStr :: String -> Routes
   prefixWithStr s = strTransformToRoutes (combine s)
 
-  whichSubBlog :: Metadata -> String
-  whichSubBlog = (fromMaybe "tech") . (Map.lookup "subblog")
+itemsMetadata :: (MonadMetadata m) => Item a -> m Metadata
+itemsMetadata  = getMetadata . itemIdentifier
+
+getSubblog :: Metadata -> String
+getSubblog = (fromMaybe (defaultSubblog siteConf)) . (Map.lookup "subblog")
+
+filterItemsByMetadata :: (MonadMetadata m, Functor m) => (Metadata -> Bool) -> [Item a] -> m [Item a]
+filterItemsByMetadata pred  = filterM ((fmap pred) . itemsMetadata)
+
+isSubblogPred :: String -> Metadata -> Bool
+isSubblogPred s = (s ==) . getSubblog
+
+onlyTechItems :: (Functor m, MonadMetadata m) => [Item a] -> m [Item a]
+onlyTechItems = filterItemsByMetadata (isSubblogPred "tech")
