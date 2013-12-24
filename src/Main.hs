@@ -4,7 +4,6 @@ import Control.Monad (filterM, (>=>))
 import Data.List (intersperse, isSuffixOf)
 import Data.List.Split (splitOn)
 import qualified Data.Map as Map
-import Data.Maybe (fromMaybe)
 import Data.Monoid (mappend)
 import Hakyll
 import Metaplasm.Config
@@ -216,7 +215,7 @@ itemsMetadata :: (MonadMetadata m) => Item a -> m Metadata
 itemsMetadata  = getMetadata . itemIdentifier
 
 getSubblog :: Metadata -> String
-getSubblog = (fromMaybe (defaultSubblog siteConf)) . (Map.lookup "subblog")
+getSubblog = Map.findWithDefault (defaultSubblog siteConf) "subblog"
 
 filterItemsByMetadata :: (MonadMetadata m, Functor m) => (Metadata -> Bool) -> [Item a] -> m [Item a]
 filterItemsByMetadata p  = filterM ((fmap p) . itemsMetadata)
