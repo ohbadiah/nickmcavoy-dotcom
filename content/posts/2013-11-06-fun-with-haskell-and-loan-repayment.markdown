@@ -1,6 +1,7 @@
 ---
 title: Fun with Haskell and Loan Repayment
 date: Wed Nov  6 00:23:18 EST 2013
+subblog: tech
 tags: Haskell, personal computing
 ---
 

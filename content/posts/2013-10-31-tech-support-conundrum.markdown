@@ -2,6 +2,7 @@
 title: Tech Support Conundrum
 date: Thu Oct 31 22:38:24 EDT 2013
 tags: Linux, adventures of Nick and Matt
+subblog: tech
 ---
 
 ### The Problem
