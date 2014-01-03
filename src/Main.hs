@@ -11,6 +11,8 @@ import Metaplasm.Tags
 import System.FilePath (combine, splitExtension, takeFileName)
 import Text.Pandoc.Options (writerHtml5)
 
+--import Debug.Trace (trace)
+
 hakyllConf :: Configuration
 hakyllConf = defaultConfiguration
   { deployCommand = "git push heroku master"
@@ -103,7 +105,7 @@ main = hakyllWith hakyllConf $ do
         >>= renderAtom (feedConf title) feedCtx
 
   match "content/posts/*" $ do
-    route $ directorizeDate `composeRoutes` stripContent `composeRoutes` setExtension "html" `composeRoutes` prefixWithSubblog
+    route $ directorizeDate `composeRoutes` prefixWithSubblog `composeRoutes` stripContent `composeRoutes` setExtension "html"
     compile $ do
       compiled <- pandocHtml5Compiler
       full <- loadAndApplyTemplate "templates/post.html" postTagsCtx compiled
@@ -127,7 +129,7 @@ main = hakyllWith hakyllConf $ do
         >>= relativizeUrls
 
   match "content/index.html" $ do
-    route $ stripContent `composeRoutes` prefixWithSubblog
+    route $ stripContent `composeRoutes` (prefixWithStr "tech")
     compile $ do
       tpl <- loadBody "templates/post-item-full.html"
       body <- readTemplate . itemBody <$> getResourceBody
@@ -176,7 +178,6 @@ postList tags sortFilter = do
 stripContent :: Routes
 stripContent = gsubRoute "content/" $ const ""
 
--- | Prefix the filename with the given string, ignoring the path on disk.
 prefixRoute :: String -> Routes
 prefixRoute s = customRoute (combine s . takeFileName . toFilePath)
 
@@ -203,25 +204,21 @@ deIndexedUrlField key = field key
 dropMore :: Item String -> Item String
 dropMore = fmap (unlines . takeWhile (/= "<!-- MORE -->") . lines)
 
-strTransformToRoutes :: (String -> String) -> Routes
-strTransformToRoutes strTransform = customRoute $ strTransform . toFilePath
-
 prefixWithSubblog :: Routes
-prefixWithSubblog = metadataRoute $ prefixWithStr . getSubblog where
-  prefixWithStr :: String -> Routes
-  prefixWithStr s = strTransformToRoutes (combine s)
+prefixWithSubblog = metadataRoute $ prefixWithStr . getSubblog
 
-itemsMetadata :: (MonadMetadata m) => Item a -> m Metadata
-itemsMetadata  = getMetadata . itemIdentifier
+prefixWithStr :: String -> Routes
+prefixWithStr s = customRoute $ (combine s) . toFilePath
 
 getSubblog :: Metadata -> String
 getSubblog = Map.findWithDefault (defaultSubblog siteConf) "subblog"
 
-filterItemsByMetadata :: (MonadMetadata m, Functor m) => (Metadata -> Bool) -> [Item a] -> m [Item a]
-filterItemsByMetadata p  = filterM ((fmap p) . itemsMetadata)
-
-isSubblogPred :: String -> Metadata -> Bool
-isSubblogPred s = (s ==) . getSubblog
 
 onlyTechItems :: (Functor m, MonadMetadata m) => [Item a] -> m [Item a]
-onlyTechItems = filterItemsByMetadata (isSubblogPred "tech")
+onlyTechItems = filterItemsByMetadata (isSubblog "tech") where
+  filterItemsByMetadata :: (MonadMetadata m, Functor m) => (Metadata -> Bool) -> [Item a] -> m [Item a]
+  filterItemsByMetadata p  = filterM ((fmap p) . getMetadata . itemIdentifier)
+
+
+  isSubblog :: String -> Metadata -> Bool
+  isSubblog s = (s ==) . getSubblog
