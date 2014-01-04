@@ -1,6 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
-import Control.Applicative (Alternative (..), (<$>))
-import Control.Monad (filterM, (>=>))
+import Control.Applicative (Alternative (..))
+import Control.Monad (filterM, (>=>), forM_)
 import Data.List (intersperse, isSuffixOf)
 import Data.List.Split (splitOn)
 import qualified Data.Map as Map
@@ -21,7 +21,7 @@ hakyllConf = defaultConfiguration
 siteConf :: SiteConfiguration
 siteConf = SiteConfiguration
   { siteRoot = "http://www.nickmcavoy.com"
-  , subBlogs = ["personal", "tech"]
+  , subBlogs = ["tech", "food"]
   , defaultSubblog = "tech"
   }
 
@@ -128,19 +128,7 @@ main = hakyllWith hakyllConf $ do
         >>= loadAndApplyTemplate "templates/default.html" archiveCtx
         >>= relativizeUrls
 
-  match "content/index.html" $ do
-    route $ stripContent `composeRoutes` (prefixWithStr "tech")
-    compile $ do
-      tpl <- loadBody "templates/post-item-full.html"
-      body <- readTemplate . itemBody <$> getResourceBody
-      loadAllSnapshots "content/posts/*" "teaser"
-        >>= fmap (take 100) . (recentFirst >=> onlyTechItems)
-        >>= applyTemplateList tpl (postCtx tags)
-        >>= makeItem
-        >>= applyTemplate body (siteCtx `mappend` bodyField "posts")
-        >>= loadAndApplyTemplate "templates/default.html" siteCtx
-        >>= relativizeUrls
-        >>= deIndexUrls
+  forM_ (subBlogs siteConf) (processSubblogIndex tags)
 
   create ["atom.xml"] $ do
     route idRoute
@@ -214,11 +202,27 @@ getSubblog :: Metadata -> String
 getSubblog = Map.findWithDefault (defaultSubblog siteConf) "subblog"
 
 
-onlyTechItems :: (Functor m, MonadMetadata m) => [Item a] -> m [Item a]
-onlyTechItems = filterItemsByMetadata (isSubblog "tech") where
+onlyItemsForSubblog :: (Functor m, MonadMetadata m) => String -> [Item a] -> m [Item a]
+onlyItemsForSubblog = filterItemsByMetadata . isSubblog  where
   filterItemsByMetadata :: (MonadMetadata m, Functor m) => (Metadata -> Bool) -> [Item a] -> m [Item a]
   filterItemsByMetadata p  = filterM ((fmap p) . getMetadata . itemIdentifier)
 
 
   isSubblog :: String -> Metadata -> Bool
   isSubblog s = (s ==) . getSubblog
+
+processSubblogIndex :: Tags -> String -> Rules ()
+processSubblogIndex tags subblog =
+  create [fromFilePath $ subblog ++ "/index.html"] $ do
+    route $ idRoute
+    compile $ do
+      postTpl <- loadBody "templates/post-item-full.html"
+      body <- loadBody "templates/subblog-index.html"
+      loadAllSnapshots "content/posts/*" "teaser"
+        >>= fmap (take 100) . (recentFirst >=> (onlyItemsForSubblog subblog))
+        >>= applyTemplateList postTpl (postCtx tags)
+        >>= makeItem
+        >>= applyTemplate body (siteCtx `mappend` bodyField "posts")
+        >>= loadAndApplyTemplate "templates/default.html" siteCtx
+        >>= relativizeUrls
+        >>= deIndexUrls
