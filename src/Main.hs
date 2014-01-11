@@ -10,7 +10,7 @@ import Metaplasm.Config
 import Metaplasm.Tags
 import System.FilePath (combine, splitExtension, takeFileName)
 import Text.Pandoc.Options (writerHtml5)
-
+import Nick.Regex (firstMatch)
 --import Debug.Trace (trace)
 
 hakyllConf :: Configuration
@@ -73,6 +73,14 @@ main = hakyllWith hakyllConf $ do
   match "content/about/index.md" $ do
     route $ stripContent `composeRoutes` setExtension "html"
     compile $ pandocHtml5Compiler
+      >>= loadAndApplyTemplate "templates/about.html"  siteCtx
+      >>= loadAndApplyTemplate "templates/default.html" siteCtx
+      >>= relativizeUrls
+      >>= deIndexUrls
+
+  match "content/about/*.md" $ do
+    route $ subblogAboutRoutes
+    compile $ (pandocCompilerWith defaultHakyllReaderOptions writerOptions)
       >>= loadAndApplyTemplate "templates/about.html"  siteCtx
       >>= loadAndApplyTemplate "templates/default.html" siteCtx
       >>= relativizeUrls
@@ -210,6 +218,15 @@ onlyItemsForSubblog = filterItemsByMetadata . isSubblog  where
 
   isSubblog :: String -> Metadata -> Bool
   isSubblog s = (s ==) . getSubblog
+
+subblogAboutPath :: String -> String
+subblogAboutPath = (++ "/about/index.html") . firstMatch "about/([a-zA-Z]+).md"
+
+strTransformToRoutes :: (String -> String) -> Routes
+strTransformToRoutes strTransform = customRoute $ strTransform . toFilePath
+
+subblogAboutRoutes :: Routes
+subblogAboutRoutes = strTransformToRoutes subblogAboutPath
 
 processSubblogIndex :: Tags -> String -> Rules ()
 processSubblogIndex tags subblog =
