@@ -26,6 +26,7 @@ library
     mtl >= 2.1.2,
     old-locale >= 1.0.0.5,
     pandoc >= 1.11.1,
+    regex-tdfa >= 1.1.8,
     shakespeare-js >= 1.1.4,
     split >= 0.2.2,
     statistics >= 0.10.2.0,
