@@ -4,7 +4,8 @@ import Control.Monad (filterM, (>=>), forM_)
 import Data.List (intersperse, isSuffixOf)
 import Data.List.Split (splitOn)
 import qualified Data.Map as Map
-import Data.Monoid (mappend)
+import Data.Maybe (fromJust)
+import Data.Monoid (mappend, (<>))
 import Hakyll
 import Metaplasm.Config
 import Metaplasm.Tags
@@ -21,11 +22,9 @@ hakyllConf = defaultConfiguration
 siteConf :: SiteConfiguration
 siteConf = SiteConfiguration
   { siteRoot = "http://www.nickmcavoy.com"
-  , subBlogs = ["tech", "food"]
+  , subBlogs = Map.fromList [("tech", "Computing"), ("food", "Food")]
   , defaultSubblog = "tech"
   }
-
-
 
 feedConf :: String -> FeedConfiguration
 feedConf title = FeedConfiguration
@@ -40,7 +39,6 @@ main :: IO ()
 main = hakyllWith hakyllConf $ do
   let engineConf = defaultEngineConfiguration
   let writerOptions = defaultHakyllWriterOptions { writerHtml5 = True }
-
   let pandocHtml5Compiler =
         pandocCompilerWith defaultHakyllReaderOptions writerOptions
 
@@ -136,7 +134,12 @@ main = hakyllWith hakyllConf $ do
         >>= loadAndApplyTemplate "templates/default.html" archiveCtx
         >>= relativizeUrls
 
-  forM_ (subBlogs siteConf) (processSubblogIndex tags)
+  forM_ (Map.keys $ subBlogs siteConf)
+    (\subblog ->
+      do
+        processSubblogIndex tags subblog
+        createSubblogAtomFeed tags subblog
+        createSubblogAboutPages subblog)
 
   create ["atom.xml"] $ do
     route idRoute
@@ -230,6 +233,7 @@ subblogAboutRoutes = strTransformToRoutes subblogAboutPath
 
 processSubblogIndex :: Tags -> String -> Rules ()
 processSubblogIndex tags subblog =
+  let ctx = siteCtx <> (subblogCtx subblog) in
   create [fromFilePath $ subblog ++ "/index.html"] $ do
     route $ idRoute
     compile $ do
@@ -239,7 +243,36 @@ processSubblogIndex tags subblog =
         >>= fmap (take 100) . (recentFirst >=> (onlyItemsForSubblog subblog))
         >>= applyTemplateList postTpl (postCtx tags)
         >>= makeItem
-        >>= applyTemplate body (siteCtx `mappend` bodyField "posts")
-        >>= loadAndApplyTemplate "templates/default.html" siteCtx
+        >>= applyTemplate body (siteCtx <> bodyField "posts")
+        >>= loadAndApplyTemplate "templates/default_subblog.html" ctx
         >>= relativizeUrls
         >>= deIndexUrls
+
+createSubblogAtomFeed :: Tags -> String -> Rules ()
+createSubblogAtomFeed tags subblog =
+  create [fromFilePath $ subblog ++ "/atom.xml"] $ do
+    route idRoute
+    compile $ do
+      let feedCtx = postCtx tags <> bodyField "description"
+      posts <- mapM deIndexUrls =<< fmap (take 10) . (recentFirst >=> (onlyItemsForSubblog subblog)) =<<
+        loadAllSnapshots "content/posts/*" "content"
+      renderAtom (feedConf "blog") feedCtx (posts)
+
+createSubblogAboutPages :: String -> Rules ()
+createSubblogAboutPages subblog =
+  let ctx = siteCtx <> (subblogCtx subblog) in
+  let writerOptions = defaultHakyllWriterOptions { writerHtml5 = True } in
+  match  (fromGlob $ "content/about/" ++ subblog ++ ".md") $ do
+    route $ subblogAboutRoutes
+    compile $ (pandocCompilerWith defaultHakyllReaderOptions writerOptions)
+      >>= loadAndApplyTemplate "templates/about.html"  ctx
+      >>= loadAndApplyTemplate "templates/default_subblog.html" ctx
+      >>= relativizeUrls
+      >>= deIndexUrls
+
+subblogCtx :: String -> Context String
+subblogCtx subblog =
+  constField "subblog" subblog <>
+  constField "subblogTitle" (subblogTitle subblog) where
+    subblogTitle :: String -> String
+    subblogTitle s  = fromJust $ Map.lookup s (subBlogs siteConf)

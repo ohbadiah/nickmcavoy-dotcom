@@ -2,6 +2,7 @@
 module Metaplasm.Config where
 
 import Hakyll
+import qualified Data.Map as Map
 
 data EngineConfiguration = EngineConfiguration
   { lessCommand :: String
@@ -30,6 +31,6 @@ defaultEngineConfiguration = EngineConfiguration
 
 data SiteConfiguration = SiteConfiguration
   { siteRoot :: String
-  , subBlogs       :: [String]
+  , subBlogs       :: Map.Map String String
   , defaultSubblog :: String
   }
