@@ -110,7 +110,7 @@ main = hakyllWith hakyllConf $ do
       teaser <- loadAndApplyTemplate "templates/post-teaser.html" postTagsCtx $ dropMore compiled
       _ <- saveSnapshot "content" full
       _ <- saveSnapshot "teaser" teaser
-      loadAndApplyTemplate "templates/default.html" (postCtx tags) full
+      loadAndApplyTemplate "templates/default_subblog.html" (metadataField <> (postCtx tags) <> (field "subblogTitle" subblogTitleForItem)) full
         >>= relativizeUrls
         >>= deIndexUrls
 
@@ -210,9 +210,11 @@ onlyItemsForSubblog = filterItemsByMetadata . isSubblog  where
   filterItemsByMetadata :: (MonadMetadata m, Functor m) => (Metadata -> Bool) -> [Item a] -> m [Item a]
   filterItemsByMetadata p  = filterM ((fmap p) . getMetadata . itemIdentifier)
 
+subblogTitleForItem :: Item a -> Compiler String
+subblogTitleForItem = (fmap (subblogTitle . getSubblog)) . getMetadata . itemIdentifier
 
-  isSubblog :: String -> Metadata -> Bool
-  isSubblog s = (s ==) . getSubblog
+isSubblog :: String -> Metadata -> Bool
+isSubblog s = (s ==) . getSubblog
 
 subblogAboutPath :: String -> String
 subblogAboutPath = (++ "/about/index.html") . firstMatch "about/([a-zA-Z]+).md"
@@ -266,5 +268,6 @@ subblogCtx :: String -> Context String
 subblogCtx subblog =
   constField "subblog" subblog <>
   constField "subblogTitle" (subblogTitle subblog) where
-    subblogTitle :: String -> String
-    subblogTitle s  = fromJust $ Map.lookup s (subBlogs siteConf)
+
+subblogTitle :: String -> String
+subblogTitle s  = fromJust $ Map.lookup s (subBlogs siteConf)
