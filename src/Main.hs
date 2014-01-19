@@ -114,6 +114,13 @@ main = hakyllWith hakyllConf $ do
         >>= relativizeUrls
         >>= deIndexUrls
 
+  match "content/index.md" $ do
+    route $ stripContent `composeRoutes` setExtension "html"
+    compile $ pandocHtml5Compiler
+      >>= loadAndApplyTemplate "templates/default.html" siteCtx
+      >>= relativizeUrls
+      >>= deIndexUrls
+
   create ["archive.html"] $ do
     route stripContent
     compile $ do
