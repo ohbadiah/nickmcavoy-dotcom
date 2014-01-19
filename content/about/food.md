@@ -2,4 +2,4 @@
 title: About this blog
 ---
 
-This is my food blog.
+What are we going to eat, Precious?
