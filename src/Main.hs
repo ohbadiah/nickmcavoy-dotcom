@@ -76,14 +76,6 @@ main = hakyllWith hakyllConf $ do
       >>= relativizeUrls
       >>= deIndexUrls
 
-  match "content/about/*.md" $ do
-    route $ subblogAboutRoutes
-    compile $ (pandocCompilerWith defaultHakyllReaderOptions writerOptions)
-      >>= loadAndApplyTemplate "templates/about.html"  siteCtx
-      >>= loadAndApplyTemplate "templates/default.html" siteCtx
-      >>= relativizeUrls
-      >>= deIndexUrls
-
   tagsRules tags $ \tag pattern -> do
     let title = "Posts tagged " ++ tag
 
