@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Nick on Computing: blog</title>
+    <link href="http://nickmcavoy.com/blog/food/atom.xml" rel="self" />
+    <link href="http://nickmcavoy.com/blog" />
+    <id>http://nickmcavoy.com/blog/food/atom.xml</id>
+    <author>
+        <name>Nicholas McAvoy</name>
+        <email>nicholas.mcavoy@gmail.com</email>
+    </author>
+    <updated>2013-12-14T00:00:00Z</updated>
+    <entry>
+    <title>nicks test post</title>
+    <link href="http://nickmcavoy.com/blog/food/posts/2013/12/14/nicks-test-post/" />
+    <id>http://nickmcavoy.com/blog/food/posts/2013/12/14/nicks-test-post/</id>
+    <published>2013-12-14T00:00:00Z</published>
+    <updated>2013-12-14T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1 class="entry-title">
+      <a href="/food/posts/2013/12/14/nicks-test-post/">nicks test post</a>
+    </h1>
+    <div class="meta">
+      <time datetime="2013-12-14" pubdate data-updated="true">14 December 2013</time>
+      <div class="tags"></div>
+    </div>
+  </header>
+
+  <p>This is a test post!</p>
+</article>
+
+]]></summary>
+</entry>
+
+</feed>

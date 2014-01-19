@@ -8,17 +8,39 @@
         <name>Nicholas McAvoy</name>
         <email>nicholas.mcavoy@gmail.com</email>
     </author>
-    <updated>2013-11-06T00:00:00Z</updated>
+    <updated>2013-12-14T00:00:00Z</updated>
     <entry>
+    <title>nicks test post</title>
+    <link href="http://nickmcavoy.com/blog/food/posts/2013/12/14/nicks-test-post/" />
+    <id>http://nickmcavoy.com/blog/food/posts/2013/12/14/nicks-test-post/</id>
+    <published>2013-12-14T00:00:00Z</published>
+    <updated>2013-12-14T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1 class="entry-title">
+      <a href="/food/posts/2013/12/14/nicks-test-post/">nicks test post</a>
+    </h1>
+    <div class="meta">
+      <time datetime="2013-12-14" pubdate data-updated="true">14 December 2013</time>
+      <div class="tags"></div>
+    </div>
+  </header>
+
+  <p>This is a test post!</p>
+</article>
+
+]]></summary>
+</entry>
+<entry>
     <title>Fun with Haskell and Loan Repayment</title>
-    <link href="http://nickmcavoy.com/blog/posts/2013/11/06/fun-with-haskell-and-loan-repayment/" />
-    <id>http://nickmcavoy.com/blog/posts/2013/11/06/fun-with-haskell-and-loan-repayment/</id>
+    <link href="http://nickmcavoy.com/blog/tech/posts/2013/11/06/fun-with-haskell-and-loan-repayment/" />
+    <id>http://nickmcavoy.com/blog/tech/posts/2013/11/06/fun-with-haskell-and-loan-repayment/</id>
     <published>2013-11-06T00:00:00Z</published>
     <updated>2013-11-06T00:00:00Z</updated>
     <summary type="html"><![CDATA[<article>
   <header>
     <h1 class="entry-title">
-      <a href="/posts/2013/11/06/fun-with-haskell-and-loan-repayment/">Fun with Haskell and Loan Repayment</a>
+      <a href="/tech/posts/2013/11/06/fun-with-haskell-and-loan-repayment/">Fun with Haskell and Loan Repayment</a>
     </h1>
     <div class="meta">
       <time datetime="2013-11-06" pubdate data-updated="true"> 6 November 2013</time>
@@ -148,14 +170,14 @@ The composition of the payoff was  91.89421558703962 % principal, and 8.10578441
 </entry>
 <entry>
     <title>Tech Support Conundrum</title>
-    <link href="http://nickmcavoy.com/blog/posts/2013/10/31/tech-support-conundrum/" />
-    <id>http://nickmcavoy.com/blog/posts/2013/10/31/tech-support-conundrum/</id>
+    <link href="http://nickmcavoy.com/blog/tech/posts/2013/10/31/tech-support-conundrum/" />
+    <id>http://nickmcavoy.com/blog/tech/posts/2013/10/31/tech-support-conundrum/</id>
     <published>2013-10-31T00:00:00Z</published>
     <updated>2013-10-31T00:00:00Z</updated>
     <summary type="html"><![CDATA[<article>
   <header>
     <h1 class="entry-title">
-      <a href="/posts/2013/10/31/tech-support-conundrum/">Tech Support Conundrum</a>
+      <a href="/tech/posts/2013/10/31/tech-support-conundrum/">Tech Support Conundrum</a>
     </h1>
     <div class="meta">
       <time datetime="2013-10-31" pubdate data-updated="true">31 October 2013</time>
@@ -198,14 +220,14 @@ The composition of the payoff was  91.89421558703962 % principal, and 8.10578441
 </entry>
 <entry>
     <title>Hello, world!</title>
-    <link href="http://nickmcavoy.com/blog/posts/2013/10/28/hello-blog/" />
-    <id>http://nickmcavoy.com/blog/posts/2013/10/28/hello-blog/</id>
+    <link href="http://nickmcavoy.com/blog/tech/posts/2013/10/28/hello-blog/" />
+    <id>http://nickmcavoy.com/blog/tech/posts/2013/10/28/hello-blog/</id>
     <published>2013-10-28T00:00:00Z</published>
     <updated>2013-10-28T00:00:00Z</updated>
     <summary type="html"><![CDATA[<article>
   <header>
     <h1 class="entry-title">
-      <a href="/posts/2013/10/28/hello-blog/">Hello, world!</a>
+      <a href="/tech/posts/2013/10/28/hello-blog/">Hello, world!</a>
     </h1>
     <div class="meta">
       <time datetime="2013-10-28" pubdate data-updated="true">28 October 2013</time>

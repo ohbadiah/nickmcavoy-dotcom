@@ -1,28 +1,62 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <title>Nick on Computing: Posts tagged Haskell</title>
-    <link href="http://nickmcavoy.com/blog/tags/Haskell/index.xml" rel="self" />
-    <link href="http://nickmcavoy.com/blog" />
-    <id>http://nickmcavoy.com/blog/tags/Haskell/index.xml</id>
-    <author>
-        <name>Nicholas McAvoy</name>
-        <email>nicholas.mcavoy@gmail.com</email>
-    </author>
-    <updated>2013-11-06T00:00:00Z</updated>
-    <entry>
-    <title>Fun with Haskell and Loan Repayment</title>
-    <link href="http://nickmcavoy.com/blog/tech/posts/2013/11/06/fun-with-haskell-and-loan-repayment/" />
-    <id>http://nickmcavoy.com/blog/tech/posts/2013/11/06/fun-with-haskell-and-loan-repayment/</id>
-    <published>2013-11-06T00:00:00Z</published>
-    <updated>2013-11-06T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Nick on Computing: Fun with Haskell and Loan Repayment</title>
+    <meta name="description" content />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="alternate" type="application/atom+xml" title="Posts" href="../../../../../../atom.xml" />
+    <link type="image/png" rel="icon" href="../../../../../../images/favicon.png" />
+    <link type="text/css" rel="canonical" href="http://www.nickmcavoy.com/">
+    <link type="text/css" rel="stylesheet" href="../../../../../../css/responsive.css" />
+    <link type="text/css" rel="stylesheet" href="../../../../../../css/main.css" />
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Fjalla+One">
+    <script src="../../../../../../js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <hgroup>
+          <h1 id="logo">
+            <a href="../../../../../../">
+              <span class="logo">Nick on Computing</span>
+            </a>
+          </h1>
+        </hgroup>
+      </header>
+
+      <nav class="navbar">
+        <a href="../../../../../../tech/atom.xml" rel="subscribe-rss" title="subscribe via RSS" class="subscribe pull-right"><img alt="RSS" src="../../../../../../images/rss.png" /></a>
+        <form action="http://google.com/search" method="get" class="navbar-form pull-right">
+          <fieldset role="search">
+            <input type="hidden" name="q" value="site:nickmcavoy.com" />
+            <input class="span2" type="text" name="q" results="0" placeholder="Search" />
+          </fieldset>
+        </form>
+        <div class="navbar-inner">
+          <ul class="nav">
+            <li><a href="../../../../../../">Mothership</a></li>
+            <li><a href="../../../../../../tech/">Posts</a></li>
+            <li><a href="../../../../../../tech/about/">About</a></li>
+            <li><a href="http://github.com/ohbadiah/nickmcavoy-dotcom">Source</a></li>
+            <li><a href="http://twitter.com/ohbadiah">Twitter</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div id="content">
+        <article>
   <header>
     <h1 class="entry-title">
-      <a href="/tech/posts/2013/11/06/fun-with-haskell-and-loan-repayment/">Fun with Haskell and Loan Repayment</a>
+      <a href="../../../../../../tech/posts/2013/11/06/fun-with-haskell-and-loan-repayment/">Fun with Haskell and Loan Repayment</a>
     </h1>
     <div class="meta">
       <time datetime="2013-11-06" pubdate data-updated="true"> 6 November 2013</time>
-      <div class="tags"><a href="/tags/Haskell/index.html">Haskell</a> | <a href="/tags/personal%20computing/index.html">personal computing</a></div>
+      <div class="tags"><a href="../../../../../../tags/Haskell/">Haskell</a> | <a href="../../../../../../tags/personal%20computing/">personal computing</a></div>
     </div>
   </header>
 
@@ -78,11 +112,11 @@ paydown repaymentStrategy loan <span class="fu">=</span> step repaymentStrategy 
 step  s<span class="fu">@</span>(<span class="dt">Strategy</span> perYear fractionOfMonthly) l<span class="fu">@</span>(<span class="dt">Loan</span> balance apr monthly) sim
   <span class="fu">|</span> balance <span class="fu">&lt;=</span> <span class="dv">0</span><span class="fu">.</span><span class="dv">01</span>       <span class="fu">=</span> <span class="dt">Right</span> sim
   <span class="fu">|</span> (elapsedT sim) <span class="fu">&gt;=</span> <span class="dv">100</span> <span class="fu">=</span> <span class="dt">Left</span> <span class="st">&quot;That better not take more than a century to repay.&quot;</span>
-  <span class="fu">|</span> otherwise             <span class="fu">=</span> step s (l {balance <span class="fu">=</span> balance&#39;}) sim&#39; <span class="kw">where</span>
+  <span class="fu">|</span> otherwise             <span class="fu">=</span> step s (l {balance <span class="fu">=</span> balance'}) sim' <span class="kw">where</span>
       dt                <span class="fu">=</span> <span class="dv">1</span> <span class="fu">/</span> (fromIntegral perYear)
       compoundedBalance <span class="fu">=</span> pert l dt
       payment           <span class="fu">=</span> monthly <span class="fu">*</span> fractionOfMonthly
-      balance&#39;          <span class="fu">=</span> compoundedBalance <span class="fu">-</span> payment</code></pre>
+      balance'          <span class="fu">=</span> compoundedBalance <span class="fu">-</span> payment</code></pre>
 <p>Our top-level function <code>paydown</code> winds up its recursive child <code>step</code> and sets it running. <code>step</code> first checks to see whether the loan it has been handed has already been paid off; if so the recursion can stop and a successful result can be returned. Then, it sees if it’s taking more than a century to pay down the loan; if so there is probably something wrong and we will just exit the sim with an error message.</p>
 <p>Barring those scenarios, we will let the balloon inflate for another payment period and then let some air out. The inflation (compounding) is defined by the “pert” formula listed above.<sup>1</sup> Our only inherent limitation should be the imperfections of floating point arithmetic, which I do not think will hurt us much.</p>
 <p>Other than that, we figure out how much our payment is and we take it off the top. Phewww</p>
@@ -144,7 +178,27 @@ The composition of the payoff was  91.89421558703962 % principal, and 8.10578441
 <h6 id="one-nice-thing-about-this-formula-is-it-is-exact.-unlike-the-case-of-say-a-simulation-of-a-projectile-the-size-of-our-time-slice-is-not-a-limiting-factor.-our-simulation-can-visit-the-balloon-only-at-payment-time-without-loss-of-accuracy."><sup>1</sup> One nice thing about this formula is it is exact. Unlike the case of, say, a simulation of a projectile, the size of our time slice is not a limiting factor. Our simulation can visit the balloon only at payment time without loss of accuracy.</h6>
 </article>
 
-]]></summary>
-</entry>
 
-</feed>
+      </div>
+
+      <div class="social-share">
+        <ul>
+          <li>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.nickmcavoy.com/tech/posts/2013/11/06/fun-with-haskell-and-loan-repayment/" data-text="Fun with Haskell and Loan Repayment" data-via="ohbadiah">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          </li>
+        </ul>
+      </div>
+
+      <footer role="contentinfo">
+        <p>
+          Copyright © 2013 <a href="http://nickmcavoy.com/contact">Nicholas McAvoy</a>
+          <span class="credit">Powered by <a href="http://jaspervdj.be/hakyll/">Hakyll</a></span>
+        </p>
+      </footer>
+    </div>
+
+    <script>window.jQuery || document.write('<script src="../../../../../../js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+    <script src="../../../../../../js/vendor/bootstrap.min.js"></script>
+  </body>
+</html>
