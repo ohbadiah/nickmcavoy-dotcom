@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <title>Nick on Computing: blog</title>
-    <link href="http://nickmcavoy.com/blog/food/atom.xml" rel="self" />
+    <title>Nick on Computing: Posts tagged particular foods</title>
+    <link href="http://nickmcavoy.com/blog/tags/particular%20foods/index.xml" rel="self" />
     <link href="http://nickmcavoy.com/blog" />
-    <id>http://nickmcavoy.com/blog/food/atom.xml</id>
+    <id>http://nickmcavoy.com/blog/tags/particular%20foods/index.xml</id>
     <author>
         <name>Nicholas McAvoy</name>
         <email>nicholas.mcavoy@gmail.com</email>
@@ -22,7 +22,7 @@
     </h1>
     <div class="meta">
       <time datetime="2014-01-25" pubdate data-updated="true">25 January 2014</time>
-      <div class="tags"><a href="/tags/particular%20foods/">particular foods</a></div>
+      <div class="tags"><a href="/tags/particular%20foods/index.html">particular foods</a></div>
     </div>
   </header>
 
@@ -40,28 +40,6 @@
 <p>The result was wonderful. I savored every sip of the delicious coffee as it restored the vitality I had just spent. All through church I was even more alert than on a normal rested day, my mind running all over the subjects church presented for contemplation. And the wonderful nutty flavor stayed with me for hours.</p>
 <p>So I have decided that I will enjoy coffee, but in an inverted way compared to most of the world. Rather than as a way to crank more productivity out of myself on less sleep, I will reserve it as a pleasure for the Sabbath. Rather than through the Monday morning grind, it will bring me to fullest worship on Sundays.</p>
 <p>Maybe I was foolish to avoid coffee for so long, but I think it was exactly in waiting the way I did that I discovered a wise and relatively novel use for it. I like, even love coffee, but it is my servant and not my master.</p>
-</article>
-
-]]></summary>
-</entry>
-<entry>
-    <title>nicks test post</title>
-    <link href="http://nickmcavoy.com/blog/food/posts/2013/12/14/nicks-test-post/" />
-    <id>http://nickmcavoy.com/blog/food/posts/2013/12/14/nicks-test-post/</id>
-    <published>2013-12-14T00:00:00Z</published>
-    <updated>2013-12-14T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1 class="entry-title">
-      <a href="/food/posts/2013/12/14/nicks-test-post/">nicks test post</a>
-    </h1>
-    <div class="meta">
-      <time datetime="2013-12-14" pubdate data-updated="true">14 December 2013</time>
-      <div class="tags"></div>
-    </div>
-  </header>
-
-  <p>This is a test post!</p>
 </article>
 
 ]]></summary>
