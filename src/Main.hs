@@ -22,7 +22,7 @@ hakyllConf = defaultConfiguration
 siteConf :: SiteConfiguration
 siteConf = SiteConfiguration
   { siteRoot = "http://www.nickmcavoy.com"
-  , subBlogs = Map.fromList [("tech", "Computing"), ("food", "Food")]
+  , subBlogs = Map.fromList [("tech", "Computing"), ("food", "Food"), ("nick", "Nick"), ("muse", "Music and Culture"), ("yhwh", "Jesus")]
   , defaultSubblog = "tech"
   }
 
