@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Nick on Computing: blog</title>
+    <link href="http://nickmcavoy.com/blog/yhwh/atom.xml" rel="self" />
+    <link href="http://nickmcavoy.com/blog" />
+    <id>http://nickmcavoy.com/blog/yhwh/atom.xml</id>
+    <author>
+        <name>Nicholas McAvoy</name>
+        <email>nicholas.mcavoy@gmail.com</email>
+    </author>
+    <updated>Unknown</updated>
+    
+</feed>
