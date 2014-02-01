@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Nick on Computing: Posts tagged organization</title>
+    <link href="http://nickmcavoy.com/blog/tags/organization/index.xml" rel="self" />
+    <link href="http://nickmcavoy.com/blog" />
+    <id>http://nickmcavoy.com/blog/tags/organization/index.xml</id>
+    <author>
+        <name>Nicholas McAvoy</name>
+        <email>nicholas.mcavoy@gmail.com</email>
+    </author>
+    <updated>2014-02-01T00:00:00Z</updated>
+    <entry>
+    <title>Lists</title>
+    <link href="http://nickmcavoy.com/blog/nick/posts/2014/02/01/lists/" />
+    <id>http://nickmcavoy.com/blog/nick/posts/2014/02/01/lists/</id>
+    <published>2014-02-01T00:00:00Z</published>
+    <updated>2014-02-01T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1 class="entry-title">
+      <a href="/nick/posts/2014/02/01/lists/">Lists</a>
+    </h1>
+    <div class="meta">
+      <time datetime="2014-02-01" pubdate data-updated="true"> 1 February 2014</time>
+      <div class="tags"><a href="/tags/organization/index.html">organization</a></div>
+    </div>
+  </header>
+
+  <p>I am not very good at getting chores done.</p>
+<p>I find the simple act of making a list of tasks greatly increases the likelihood that I will do them. I can have a task in my mind for weeks without doing it, even if it as simple as a phone call. Yet somehow when I make the list something clicks and I start knocking off items.</p>
+<p>Who knew?</p>
+</article>
+
+]]></summary>
+</entry>
+
+</feed>
