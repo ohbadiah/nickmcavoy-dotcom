@@ -22,7 +22,7 @@ hakyllConf = defaultConfiguration
 siteConf :: SiteConfiguration
 siteConf = SiteConfiguration
   { siteRoot = "http://www.nickmcavoy.com"
-  , subBlogs = Map.fromList [("tech", "Computing"), ("food", "Food"), ("nick", "Nick"), ("muse", "Music and Culture"), ("yhwh", "Jesus")]
+  , subBlogs = Map.fromList [("tech", "Computing"), ("food", "Food"), ("nick", "Nick"), ("muse", "Music and Culture"), ("yhwh", "Jesus"), ("muse", "Music and Culture")]
   , defaultSubblog = "tech"
   }
 
@@ -32,7 +32,7 @@ feedConf title = FeedConfiguration
   , feedDescription = "Nick on Computing"
   , feedAuthorName = "Nicholas McAvoy"
   , feedAuthorEmail = "nicholas.mcavoy@gmail.com"
-  , feedRoot = "http://nickmcavoy.com/blog"
+  , feedRoot = "http://nickmcavoy.com"
   }
 
 main :: IO ()
