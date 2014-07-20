@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Nick on Computing: blog</title>
-    <link href="http://nickmcavoy.com/blog/nick/atom.xml" rel="self" />
-    <link href="http://nickmcavoy.com/blog" />
-    <id>http://nickmcavoy.com/blog/nick/atom.xml</id>
+    <link href="http://nickmcavoy.com/nick/atom.xml" rel="self" />
+    <link href="http://nickmcavoy.com" />
+    <id>http://nickmcavoy.com/nick/atom.xml</id>
     <author>
         <name>Nicholas McAvoy</name>
         <email>nicholas.mcavoy@gmail.com</email>
@@ -11,8 +11,8 @@
     <updated>2014-07-12T00:00:00Z</updated>
     <entry>
     <title>Puerto Rico Travelogue: Sunday, June 22</title>
-    <link href="http://nickmcavoy.com/blog/nick/posts/2014/07/12/puerto-rico-travelogue-sunday-june-22/" />
-    <id>http://nickmcavoy.com/blog/nick/posts/2014/07/12/puerto-rico-travelogue-sunday-june-22/</id>
+    <link href="http://nickmcavoy.com/nick/posts/2014/07/12/puerto-rico-travelogue-sunday-june-22/" />
+    <id>http://nickmcavoy.com/nick/posts/2014/07/12/puerto-rico-travelogue-sunday-june-22/</id>
     <published>2014-07-12T00:00:00Z</published>
     <updated>2014-07-12T00:00:00Z</updated>
     <summary type="html"><![CDATA[<article>
@@ -42,8 +42,8 @@
 </entry>
 <entry>
     <title>Puerto Rico Travelogue: Saturday, June 21</title>
-    <link href="http://nickmcavoy.com/blog/nick/posts/2014/07/12/puerto-rico-travelogue-saturday-june-21/" />
-    <id>http://nickmcavoy.com/blog/nick/posts/2014/07/12/puerto-rico-travelogue-saturday-june-21/</id>
+    <link href="http://nickmcavoy.com/nick/posts/2014/07/12/puerto-rico-travelogue-saturday-june-21/" />
+    <id>http://nickmcavoy.com/nick/posts/2014/07/12/puerto-rico-travelogue-saturday-june-21/</id>
     <published>2014-07-12T00:00:00Z</published>
     <updated>2014-07-12T00:00:00Z</updated>
     <summary type="html"><![CDATA[<article>
@@ -77,8 +77,8 @@
 </entry>
 <entry>
     <title>Puerto Rico Travelogue: Friday, June 20</title>
-    <link href="http://nickmcavoy.com/blog/nick/posts/2014/07/12/puerto-rico-travelogue-friday-june-20/" />
-    <id>http://nickmcavoy.com/blog/nick/posts/2014/07/12/puerto-rico-travelogue-friday-june-20/</id>
+    <link href="http://nickmcavoy.com/nick/posts/2014/07/12/puerto-rico-travelogue-friday-june-20/" />
+    <id>http://nickmcavoy.com/nick/posts/2014/07/12/puerto-rico-travelogue-friday-june-20/</id>
     <published>2014-07-12T00:00:00Z</published>
     <updated>2014-07-12T00:00:00Z</updated>
     <summary type="html"><![CDATA[<article>
@@ -108,8 +108,8 @@
 </entry>
 <entry>
     <title>Seeing Dad</title>
-    <link href="http://nickmcavoy.com/blog/nick/posts/2014/02/04/seeing-dad/" />
-    <id>http://nickmcavoy.com/blog/nick/posts/2014/02/04/seeing-dad/</id>
+    <link href="http://nickmcavoy.com/nick/posts/2014/02/04/seeing-dad/" />
+    <id>http://nickmcavoy.com/nick/posts/2014/02/04/seeing-dad/</id>
     <published>2014-02-04T00:00:00Z</published>
     <updated>2014-02-04T00:00:00Z</updated>
     <summary type="html"><![CDATA[<article>
@@ -132,8 +132,8 @@
 </entry>
 <entry>
     <title>The Rider And His Mount</title>
-    <link href="http://nickmcavoy.com/blog/nick/posts/2014/02/02/the-rider-and-his-mount/" />
-    <id>http://nickmcavoy.com/blog/nick/posts/2014/02/02/the-rider-and-his-mount/</id>
+    <link href="http://nickmcavoy.com/nick/posts/2014/02/02/the-rider-and-his-mount/" />
+    <id>http://nickmcavoy.com/nick/posts/2014/02/02/the-rider-and-his-mount/</id>
     <published>2014-02-02T00:00:00Z</published>
     <updated>2014-02-02T00:00:00Z</updated>
     <summary type="html"><![CDATA[<article>
@@ -162,8 +162,8 @@
 </entry>
 <entry>
     <title>Lists</title>
-    <link href="http://nickmcavoy.com/blog/nick/posts/2014/02/01/lists/" />
-    <id>http://nickmcavoy.com/blog/nick/posts/2014/02/01/lists/</id>
+    <link href="http://nickmcavoy.com/nick/posts/2014/02/01/lists/" />
+    <id>http://nickmcavoy.com/nick/posts/2014/02/01/lists/</id>
     <published>2014-02-01T00:00:00Z</published>
     <updated>2014-02-01T00:00:00Z</updated>
     <summary type="html"><![CDATA[<article>
@@ -186,8 +186,8 @@
 </entry>
 <entry>
     <title>Alien Grace</title>
-    <link href="http://nickmcavoy.com/blog/nick/posts/2014/01/27/alien-grace/" />
-    <id>http://nickmcavoy.com/blog/nick/posts/2014/01/27/alien-grace/</id>
+    <link href="http://nickmcavoy.com/nick/posts/2014/01/27/alien-grace/" />
+    <id>http://nickmcavoy.com/nick/posts/2014/01/27/alien-grace/</id>
     <published>2014-01-27T00:00:00Z</published>
     <updated>2014-01-27T00:00:00Z</updated>
     <summary type="html"><![CDATA[<article>

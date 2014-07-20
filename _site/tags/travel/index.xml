@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Nick on Computing: Posts tagged travel</title>
-    <link href="http://nickmcavoy.com/blog/tags/travel/index.xml" rel="self" />
-    <link href="http://nickmcavoy.com/blog" />
-    <id>http://nickmcavoy.com/blog/tags/travel/index.xml</id>
+    <link href="http://nickmcavoy.com/tags/travel/index.xml" rel="self" />
+    <link href="http://nickmcavoy.com" />
+    <id>http://nickmcavoy.com/tags/travel/index.xml</id>
     <author>
         <name>Nicholas McAvoy</name>
         <email>nicholas.mcavoy@gmail.com</email>
@@ -11,8 +11,8 @@
     <updated>2014-07-12T00:00:00Z</updated>
     <entry>
     <title>Puerto Rico Travelogue: Sunday, June 22</title>
-    <link href="http://nickmcavoy.com/blog/nick/posts/2014/07/12/puerto-rico-travelogue-sunday-june-22/" />
-    <id>http://nickmcavoy.com/blog/nick/posts/2014/07/12/puerto-rico-travelogue-sunday-june-22/</id>
+    <link href="http://nickmcavoy.com/nick/posts/2014/07/12/puerto-rico-travelogue-sunday-june-22/" />
+    <id>http://nickmcavoy.com/nick/posts/2014/07/12/puerto-rico-travelogue-sunday-june-22/</id>
     <published>2014-07-12T00:00:00Z</published>
     <updated>2014-07-12T00:00:00Z</updated>
     <summary type="html"><![CDATA[<article>
@@ -42,8 +42,8 @@
 </entry>
 <entry>
     <title>Puerto Rico Travelogue: Saturday, June 21</title>
-    <link href="http://nickmcavoy.com/blog/nick/posts/2014/07/12/puerto-rico-travelogue-saturday-june-21/" />
-    <id>http://nickmcavoy.com/blog/nick/posts/2014/07/12/puerto-rico-travelogue-saturday-june-21/</id>
+    <link href="http://nickmcavoy.com/nick/posts/2014/07/12/puerto-rico-travelogue-saturday-june-21/" />
+    <id>http://nickmcavoy.com/nick/posts/2014/07/12/puerto-rico-travelogue-saturday-june-21/</id>
     <published>2014-07-12T00:00:00Z</published>
     <updated>2014-07-12T00:00:00Z</updated>
     <summary type="html"><![CDATA[<article>

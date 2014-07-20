@@ -1,18 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Nick on Computing: blog</title>
-    <link href="http://nickmcavoy.com/blog/atom.xml" rel="self" />
-    <link href="http://nickmcavoy.com/blog" />
-    <id>http://nickmcavoy.com/blog/atom.xml</id>
+    <link href="http://nickmcavoy.com/atom.xml" rel="self" />
+    <link href="http://nickmcavoy.com" />
+    <id>http://nickmcavoy.com/atom.xml</id>
     <author>
         <name>Nicholas McAvoy</name>
         <email>nicholas.mcavoy@gmail.com</email>
     </author>
-    <updated>2014-07-12T00:00:00Z</updated>
+    <updated>2014-07-17T00:00:00Z</updated>
     <entry>
+    <title>On a Diet</title>
+    <link href="http://nickmcavoy.com/muse/posts/2014/07/17/on-a-diet/" />
+    <id>http://nickmcavoy.com/muse/posts/2014/07/17/on-a-diet/</id>
+    <published>2014-07-17T00:00:00Z</published>
+    <updated>2014-07-17T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1 class="entry-title">
+      <a href="/muse/posts/2014/07/17/on-a-diet/">On a Diet</a>
+    </h1>
+    <div class="meta">
+      <time datetime="2014-07-17" pubdate data-updated="true">17 July 2014</time>
+      <div class="tags"><a href="/tags/good%20listening/">good listening</a></div>
+    </div>
+  </header>
+
+  <p>I bought a car with a nice stereo system last fall. This feature was important to me. My last car had no working stereo by the time I got rid of it. I often find driving a frustrating waste of time, and I thought having good listening would go a long way to making better use of the time and disliking it less.</p>
+<p>That proved mostly true. Mornings on the way to work I basked in auditory splendor. I delighted in the music, and driving was a little better. But something else happened too. I started to develop a tolerance.</p>
+<!-- MORE -->
+
+<p>Albums go really far for me. It takes maybe three listens before even know whether or not I like an album, and I can listen to a good CD dozens of times without tiring of it. But as I continued listening to sixty to ninety minutes of music per day, that began to change. I moved through albums more quickly. What was worse, I seemed to be enjoying them less.</p>
+<p>I wondered if a kind of obesity was coming upon me. Were I to eat a sumptuous feast each night for dinner, it would quickly be obvious that constant indulgence even of very good things was not healthy. As a result I decided to experiment with a more restricted musical diet. During Lent, I would only allow myself to play recorded music on the feast day, Sunday.</p>
+<p>The experiment was more successful even than I expected. I mostly enjoyed the respite during Lent, but the real surprise came afterward when I first tried to listen to <em>A Walking Fire</em> by Brooklyn Rider. Quite analogous to the first meal after a fast, my sensibilities were sharpened and the music came to me more richly and intensely. This was so much the case that well before the end of the album I was “stuffed.” I had taken in quite enough music for the day, and listening even to the whole album made me uncomfortable.</p>
+<p>It is now well past Pentecost and my listening habits have not really changed. I regularly go more than a week without playing music now. That’s because my faculties are so much sharper that one listen can last me a long time. Last Tuesday evening I listened to <em>Appalachian Journey</em>, and this morning it was still running through my head.</p>
+<p>Another consequence of listening to music less is that I listen to less music. I do not put on music just to have it in the background, and as a result I never listen to the music that I would only play for such purposes. In the extreme you could say that I have not been eating potato chips, but only juicy steak.</p>
+<p>Maybe I will enter a phase where I want to explore more new music. Hopefully music I deem worthy of such exploration will also be deemed worthy of my attention. In a media landscape that constantly fractures attention, it’s nice to have some focus.</p>
+</article>
+
+]]></summary>
+</entry>
+<entry>
     <title>Puerto Rico Travelogue: Sunday, June 22</title>
-    <link href="http://nickmcavoy.com/blog/nick/posts/2014/07/12/puerto-rico-travelogue-sunday-june-22/" />
-    <id>http://nickmcavoy.com/blog/nick/posts/2014/07/12/puerto-rico-travelogue-sunday-june-22/</id>
+    <link href="http://nickmcavoy.com/nick/posts/2014/07/12/puerto-rico-travelogue-sunday-june-22/" />
+    <id>http://nickmcavoy.com/nick/posts/2014/07/12/puerto-rico-travelogue-sunday-june-22/</id>
     <published>2014-07-12T00:00:00Z</published>
     <updated>2014-07-12T00:00:00Z</updated>
     <summary type="html"><![CDATA[<article>
@@ -42,8 +73,8 @@
 </entry>
 <entry>
     <title>Puerto Rico Travelogue: Saturday, June 21</title>
-    <link href="http://nickmcavoy.com/blog/nick/posts/2014/07/12/puerto-rico-travelogue-saturday-june-21/" />
-    <id>http://nickmcavoy.com/blog/nick/posts/2014/07/12/puerto-rico-travelogue-saturday-june-21/</id>
+    <link href="http://nickmcavoy.com/nick/posts/2014/07/12/puerto-rico-travelogue-saturday-june-21/" />
+    <id>http://nickmcavoy.com/nick/posts/2014/07/12/puerto-rico-travelogue-saturday-june-21/</id>
     <published>2014-07-12T00:00:00Z</published>
     <updated>2014-07-12T00:00:00Z</updated>
     <summary type="html"><![CDATA[<article>
@@ -77,8 +108,8 @@
 </entry>
 <entry>
     <title>Puerto Rico Travelogue: Friday, June 20</title>
-    <link href="http://nickmcavoy.com/blog/nick/posts/2014/07/12/puerto-rico-travelogue-friday-june-20/" />
-    <id>http://nickmcavoy.com/blog/nick/posts/2014/07/12/puerto-rico-travelogue-friday-june-20/</id>
+    <link href="http://nickmcavoy.com/nick/posts/2014/07/12/puerto-rico-travelogue-friday-june-20/" />
+    <id>http://nickmcavoy.com/nick/posts/2014/07/12/puerto-rico-travelogue-friday-june-20/</id>
     <published>2014-07-12T00:00:00Z</published>
     <updated>2014-07-12T00:00:00Z</updated>
     <summary type="html"><![CDATA[<article>
@@ -108,8 +139,8 @@
 </entry>
 <entry>
     <title>Pallet for Automation and Profit</title>
-    <link href="http://nickmcavoy.com/blog/tech/posts/2014/05/27/pallet-for-automation-and-profit/" />
-    <id>http://nickmcavoy.com/blog/tech/posts/2014/05/27/pallet-for-automation-and-profit/</id>
+    <link href="http://nickmcavoy.com/tech/posts/2014/05/27/pallet-for-automation-and-profit/" />
+    <id>http://nickmcavoy.com/tech/posts/2014/05/27/pallet-for-automation-and-profit/</id>
     <published>2014-05-27T00:00:00Z</published>
     <updated>2014-05-27T00:00:00Z</updated>
     <summary type="html"><![CDATA[<article>
@@ -198,8 +229,8 @@
 </entry>
 <entry>
     <title>Thursday Dinner</title>
-    <link href="http://nickmcavoy.com/blog/food/posts/2014/05/22/thursday-dinner/" />
-    <id>http://nickmcavoy.com/blog/food/posts/2014/05/22/thursday-dinner/</id>
+    <link href="http://nickmcavoy.com/food/posts/2014/05/22/thursday-dinner/" />
+    <id>http://nickmcavoy.com/food/posts/2014/05/22/thursday-dinner/</id>
     <published>2014-05-22T00:00:00Z</published>
     <updated>2014-05-22T00:00:00Z</updated>
     <summary type="html"><![CDATA[<article>
@@ -226,8 +257,8 @@
 </entry>
 <entry>
     <title>Our First and Our Best</title>
-    <link href="http://nickmcavoy.com/blog/yhwh/posts/2014/03/03/our-first-and-our-best/" />
-    <id>http://nickmcavoy.com/blog/yhwh/posts/2014/03/03/our-first-and-our-best/</id>
+    <link href="http://nickmcavoy.com/yhwh/posts/2014/03/03/our-first-and-our-best/" />
+    <id>http://nickmcavoy.com/yhwh/posts/2014/03/03/our-first-and-our-best/</id>
     <published>2014-03-03T00:00:00Z</published>
     <updated>2014-03-03T00:00:00Z</updated>
     <summary type="html"><![CDATA[<article>
@@ -262,8 +293,8 @@
 </entry>
 <entry>
     <title>"...that they might live in the spirit the way God does."</title>
-    <link href="http://nickmcavoy.com/blog/yhwh/posts/2014/02/13/that-they-might-live-in-the-spirit-the-way-god-does/" />
-    <id>http://nickmcavoy.com/blog/yhwh/posts/2014/02/13/that-they-might-live-in-the-spirit-the-way-god-does/</id>
+    <link href="http://nickmcavoy.com/yhwh/posts/2014/02/13/that-they-might-live-in-the-spirit-the-way-god-does/" />
+    <id>http://nickmcavoy.com/yhwh/posts/2014/02/13/that-they-might-live-in-the-spirit-the-way-god-does/</id>
     <published>2014-02-13T00:00:00Z</published>
     <updated>2014-02-13T00:00:00Z</updated>
     <summary type="html"><![CDATA[<article>
@@ -292,8 +323,8 @@
 </entry>
 <entry>
     <title>Seeing Dad</title>
-    <link href="http://nickmcavoy.com/blog/nick/posts/2014/02/04/seeing-dad/" />
-    <id>http://nickmcavoy.com/blog/nick/posts/2014/02/04/seeing-dad/</id>
+    <link href="http://nickmcavoy.com/nick/posts/2014/02/04/seeing-dad/" />
+    <id>http://nickmcavoy.com/nick/posts/2014/02/04/seeing-dad/</id>
     <published>2014-02-04T00:00:00Z</published>
     <updated>2014-02-04T00:00:00Z</updated>
     <summary type="html"><![CDATA[<article>
@@ -316,8 +347,8 @@
 </entry>
 <entry>
     <title>The Rider And His Mount</title>
-    <link href="http://nickmcavoy.com/blog/nick/posts/2014/02/02/the-rider-and-his-mount/" />
-    <id>http://nickmcavoy.com/blog/nick/posts/2014/02/02/the-rider-and-his-mount/</id>
+    <link href="http://nickmcavoy.com/nick/posts/2014/02/02/the-rider-and-his-mount/" />
+    <id>http://nickmcavoy.com/nick/posts/2014/02/02/the-rider-and-his-mount/</id>
     <published>2014-02-02T00:00:00Z</published>
     <updated>2014-02-02T00:00:00Z</updated>
     <summary type="html"><![CDATA[<article>
@@ -340,30 +371,6 @@
 <p>At first glance the bike was okay. But Curtis had me crouch a bit and look at the top tube at eye level. Yup, now that I looked at it, it definitely bent downward near the front. Not so much the integrity was threatened, but enough to notice, and matter.</p>
 <p>Come to look at it, the handlebars were bent, too. The brake lever was way off line, the headset worse for the wear. The scuffs on the cork tape revealed an intimate acquaintance with the road.</p>
 <p>There was considerably more damage than met the casual eye. There is an identification of the rider with his mount.</p>
-</article>
-
-]]></summary>
-</entry>
-<entry>
-    <title>Lists</title>
-    <link href="http://nickmcavoy.com/blog/nick/posts/2014/02/01/lists/" />
-    <id>http://nickmcavoy.com/blog/nick/posts/2014/02/01/lists/</id>
-    <published>2014-02-01T00:00:00Z</published>
-    <updated>2014-02-01T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1 class="entry-title">
-      <a href="/nick/posts/2014/02/01/lists/">Lists</a>
-    </h1>
-    <div class="meta">
-      <time datetime="2014-02-01" pubdate data-updated="true"> 1 February 2014</time>
-      <div class="tags"><a href="/tags/organization/">organization</a></div>
-    </div>
-  </header>
-
-  <p>I am not very good at getting chores done.</p>
-<p>I find the simple act of making a list of tasks greatly increases the likelihood that I will do them. I can have a task in my mind for weeks without doing it, even if it is as simple as a phone call. Yet somehow when I make the list something clicks and I start knocking off items.</p>
-<p>Who knew?</p>
 </article>
 
 ]]></summary>

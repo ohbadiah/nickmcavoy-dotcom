@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Nick on Computing: Posts tagged particular foods</title>
-    <link href="http://nickmcavoy.com/blog/tags/particular%20foods/index.xml" rel="self" />
-    <link href="http://nickmcavoy.com/blog" />
-    <id>http://nickmcavoy.com/blog/tags/particular%20foods/index.xml</id>
+    <link href="http://nickmcavoy.com/tags/particular%20foods/index.xml" rel="self" />
+    <link href="http://nickmcavoy.com" />
+    <id>http://nickmcavoy.com/tags/particular%20foods/index.xml</id>
     <author>
         <name>Nicholas McAvoy</name>
         <email>nicholas.mcavoy@gmail.com</email>
@@ -11,8 +11,8 @@
     <updated>2014-01-25T00:00:00Z</updated>
     <entry>
     <title>Coffee</title>
-    <link href="http://nickmcavoy.com/blog/food/posts/2014/01/25/coffee/" />
-    <id>http://nickmcavoy.com/blog/food/posts/2014/01/25/coffee/</id>
+    <link href="http://nickmcavoy.com/food/posts/2014/01/25/coffee/" />
+    <id>http://nickmcavoy.com/food/posts/2014/01/25/coffee/</id>
     <published>2014-01-25T00:00:00Z</published>
     <updated>2014-01-25T00:00:00Z</updated>
     <summary type="html"><![CDATA[<article>

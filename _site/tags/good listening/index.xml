@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <title>Nick on Computing: blog</title>
-    <link href="http://nickmcavoy.com/muse/atom.xml" rel="self" />
+    <title>Nick on Computing: Posts tagged good listening</title>
+    <link href="http://nickmcavoy.com/tags/good%20listening/index.xml" rel="self" />
     <link href="http://nickmcavoy.com" />
-    <id>http://nickmcavoy.com/muse/atom.xml</id>
+    <id>http://nickmcavoy.com/tags/good%20listening/index.xml</id>
     <author>
         <name>Nicholas McAvoy</name>
         <email>nicholas.mcavoy@gmail.com</email>
@@ -22,7 +22,7 @@
     </h1>
     <div class="meta">
       <time datetime="2014-07-17" pubdate data-updated="true">17 July 2014</time>
-      <div class="tags"><a href="/tags/good%20listening/">good listening</a></div>
+      <div class="tags"><a href="/tags/good%20listening/index.html">good listening</a></div>
     </div>
   </header>
 

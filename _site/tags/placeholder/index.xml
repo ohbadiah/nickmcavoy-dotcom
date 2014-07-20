@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Nick on Computing: Posts tagged placeholder</title>
-    <link href="http://nickmcavoy.com/blog/tags/placeholder/index.xml" rel="self" />
-    <link href="http://nickmcavoy.com/blog" />
-    <id>http://nickmcavoy.com/blog/tags/placeholder/index.xml</id>
+    <link href="http://nickmcavoy.com/tags/placeholder/index.xml" rel="self" />
+    <link href="http://nickmcavoy.com" />
+    <id>http://nickmcavoy.com/tags/placeholder/index.xml</id>
     <author>
         <name>Nicholas McAvoy</name>
         <email>nicholas.mcavoy@gmail.com</email>
@@ -11,8 +11,8 @@
     <updated>2013-10-28T00:00:00Z</updated>
     <entry>
     <title>Hello, world!</title>
-    <link href="http://nickmcavoy.com/blog/tech/posts/2013/10/28/hello-blog/" />
-    <id>http://nickmcavoy.com/blog/tech/posts/2013/10/28/hello-blog/</id>
+    <link href="http://nickmcavoy.com/tech/posts/2013/10/28/hello-blog/" />
+    <id>http://nickmcavoy.com/tech/posts/2013/10/28/hello-blog/</id>
     <published>2013-10-28T00:00:00Z</published>
     <updated>2013-10-28T00:00:00Z</updated>
     <summary type="html"><![CDATA[<article>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Nick on Computing: blog</title>
-    <link href="http://nickmcavoy.com/blog/yhwh/atom.xml" rel="self" />
-    <link href="http://nickmcavoy.com/blog" />
-    <id>http://nickmcavoy.com/blog/yhwh/atom.xml</id>
+    <link href="http://nickmcavoy.com/yhwh/atom.xml" rel="self" />
+    <link href="http://nickmcavoy.com" />
+    <id>http://nickmcavoy.com/yhwh/atom.xml</id>
     <author>
         <name>Nicholas McAvoy</name>
         <email>nicholas.mcavoy@gmail.com</email>
@@ -11,8 +11,8 @@
     <updated>2014-03-03T00:00:00Z</updated>
     <entry>
     <title>Our First and Our Best</title>
-    <link href="http://nickmcavoy.com/blog/yhwh/posts/2014/03/03/our-first-and-our-best/" />
-    <id>http://nickmcavoy.com/blog/yhwh/posts/2014/03/03/our-first-and-our-best/</id>
+    <link href="http://nickmcavoy.com/yhwh/posts/2014/03/03/our-first-and-our-best/" />
+    <id>http://nickmcavoy.com/yhwh/posts/2014/03/03/our-first-and-our-best/</id>
     <published>2014-03-03T00:00:00Z</published>
     <updated>2014-03-03T00:00:00Z</updated>
     <summary type="html"><![CDATA[<article>
@@ -47,8 +47,8 @@
 </entry>
 <entry>
     <title>"...that they might live in the spirit the way God does."</title>
-    <link href="http://nickmcavoy.com/blog/yhwh/posts/2014/02/13/that-they-might-live-in-the-spirit-the-way-god-does/" />
-    <id>http://nickmcavoy.com/blog/yhwh/posts/2014/02/13/that-they-might-live-in-the-spirit-the-way-god-does/</id>
+    <link href="http://nickmcavoy.com/yhwh/posts/2014/02/13/that-they-might-live-in-the-spirit-the-way-god-does/" />
+    <id>http://nickmcavoy.com/yhwh/posts/2014/02/13/that-they-might-live-in-the-spirit-the-way-god-does/</id>
     <published>2014-02-13T00:00:00Z</published>
     <updated>2014-02-13T00:00:00Z</updated>
     <summary type="html"><![CDATA[<article>
@@ -77,8 +77,8 @@
 </entry>
 <entry>
     <title>The Bondage of the Will</title>
-    <link href="http://nickmcavoy.com/blog/yhwh/posts/2014/01/30/the-bondage-of-the-will/" />
-    <id>http://nickmcavoy.com/blog/yhwh/posts/2014/01/30/the-bondage-of-the-will/</id>
+    <link href="http://nickmcavoy.com/yhwh/posts/2014/01/30/the-bondage-of-the-will/" />
+    <id>http://nickmcavoy.com/yhwh/posts/2014/01/30/the-bondage-of-the-will/</id>
     <published>2014-01-30T00:00:00Z</published>
     <updated>2014-01-30T00:00:00Z</updated>
     <summary type="html"><![CDATA[<article>

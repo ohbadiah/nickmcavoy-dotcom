@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Nick on Computing: Posts tagged Haskell</title>
-    <link href="http://nickmcavoy.com/blog/tags/Haskell/index.xml" rel="self" />
-    <link href="http://nickmcavoy.com/blog" />
-    <id>http://nickmcavoy.com/blog/tags/Haskell/index.xml</id>
+    <link href="http://nickmcavoy.com/tags/Haskell/index.xml" rel="self" />
+    <link href="http://nickmcavoy.com" />
+    <id>http://nickmcavoy.com/tags/Haskell/index.xml</id>
     <author>
         <name>Nicholas McAvoy</name>
         <email>nicholas.mcavoy@gmail.com</email>
@@ -11,8 +11,8 @@
     <updated>2013-11-06T00:00:00Z</updated>
     <entry>
     <title>Fun with Haskell and Loan Repayment</title>
-    <link href="http://nickmcavoy.com/blog/tech/posts/2013/11/06/fun-with-haskell-and-loan-repayment/" />
-    <id>http://nickmcavoy.com/blog/tech/posts/2013/11/06/fun-with-haskell-and-loan-repayment/</id>
+    <link href="http://nickmcavoy.com/tech/posts/2013/11/06/fun-with-haskell-and-loan-repayment/" />
+    <id>http://nickmcavoy.com/tech/posts/2013/11/06/fun-with-haskell-and-loan-repayment/</id>
     <published>2013-11-06T00:00:00Z</published>
     <updated>2013-11-06T00:00:00Z</updated>
     <summary type="html"><![CDATA[<article>

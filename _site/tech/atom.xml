@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Nick on Computing: blog</title>
-    <link href="http://nickmcavoy.com/blog/tech/atom.xml" rel="self" />
-    <link href="http://nickmcavoy.com/blog" />
-    <id>http://nickmcavoy.com/blog/tech/atom.xml</id>
+    <link href="http://nickmcavoy.com/tech/atom.xml" rel="self" />
+    <link href="http://nickmcavoy.com" />
+    <id>http://nickmcavoy.com/tech/atom.xml</id>
     <author>
         <name>Nicholas McAvoy</name>
         <email>nicholas.mcavoy@gmail.com</email>
@@ -11,8 +11,8 @@
     <updated>2014-05-27T00:00:00Z</updated>
     <entry>
     <title>Pallet for Automation and Profit</title>
-    <link href="http://nickmcavoy.com/blog/tech/posts/2014/05/27/pallet-for-automation-and-profit/" />
-    <id>http://nickmcavoy.com/blog/tech/posts/2014/05/27/pallet-for-automation-and-profit/</id>
+    <link href="http://nickmcavoy.com/tech/posts/2014/05/27/pallet-for-automation-and-profit/" />
+    <id>http://nickmcavoy.com/tech/posts/2014/05/27/pallet-for-automation-and-profit/</id>
     <published>2014-05-27T00:00:00Z</published>
     <updated>2014-05-27T00:00:00Z</updated>
     <summary type="html"><![CDATA[<article>
@@ -101,8 +101,8 @@
 </entry>
 <entry>
     <title>Fun with Haskell and Loan Repayment</title>
-    <link href="http://nickmcavoy.com/blog/tech/posts/2013/11/06/fun-with-haskell-and-loan-repayment/" />
-    <id>http://nickmcavoy.com/blog/tech/posts/2013/11/06/fun-with-haskell-and-loan-repayment/</id>
+    <link href="http://nickmcavoy.com/tech/posts/2013/11/06/fun-with-haskell-and-loan-repayment/" />
+    <id>http://nickmcavoy.com/tech/posts/2013/11/06/fun-with-haskell-and-loan-repayment/</id>
     <published>2013-11-06T00:00:00Z</published>
     <updated>2013-11-06T00:00:00Z</updated>
     <summary type="html"><![CDATA[<article>
@@ -238,8 +238,8 @@ The composition of the payoff was  91.89421558703962 % principal, and 8.10578441
 </entry>
 <entry>
     <title>Tech Support Conundrum</title>
-    <link href="http://nickmcavoy.com/blog/tech/posts/2013/10/31/tech-support-conundrum/" />
-    <id>http://nickmcavoy.com/blog/tech/posts/2013/10/31/tech-support-conundrum/</id>
+    <link href="http://nickmcavoy.com/tech/posts/2013/10/31/tech-support-conundrum/" />
+    <id>http://nickmcavoy.com/tech/posts/2013/10/31/tech-support-conundrum/</id>
     <published>2013-10-31T00:00:00Z</published>
     <updated>2013-10-31T00:00:00Z</updated>
     <summary type="html"><![CDATA[<article>
@@ -288,8 +288,8 @@ The composition of the payoff was  91.89421558703962 % principal, and 8.10578441
 </entry>
 <entry>
     <title>Hello, world!</title>
-    <link href="http://nickmcavoy.com/blog/tech/posts/2013/10/28/hello-blog/" />
-    <id>http://nickmcavoy.com/blog/tech/posts/2013/10/28/hello-blog/</id>
+    <link href="http://nickmcavoy.com/tech/posts/2013/10/28/hello-blog/" />
+    <id>http://nickmcavoy.com/tech/posts/2013/10/28/hello-blog/</id>
     <published>2013-10-28T00:00:00Z</published>
     <updated>2013-10-28T00:00:00Z</updated>
     <summary type="html"><![CDATA[<article>
