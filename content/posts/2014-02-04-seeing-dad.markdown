@@ -2,7 +2,7 @@
 title: Seeing Dad
 date: Tue Feb  4 22:14:09 EST 2014
 subblog: nick
-tags: dreams
+tags: dreams, Dad
 ---
 
 A recurring motif in dreams in which my father appears is that I embrace him.
