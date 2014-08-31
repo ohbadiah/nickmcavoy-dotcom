@@ -2,7 +2,7 @@
 title: Survivors' Awe
 date: Sat Aug 30 21:37:49 EDT 2014
 subblog: nick
-tags: human transit
+tags: human transit, escapes from death
 ---
 This requires some explanation:
 
