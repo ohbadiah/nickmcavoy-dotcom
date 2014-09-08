@@ -54,6 +54,10 @@ main = hakyllWith hakyllConf $ do
     route $ idRoute
     compile copyFileCompiler
 
+  match "content/img/*.jpg" $ do
+    route $ stripContent
+    compile copyFileCompiler
+
   match "extra/*" $ do
     route idRoute
     compile copyFileCompiler
