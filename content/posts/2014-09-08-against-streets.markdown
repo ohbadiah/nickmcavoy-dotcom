@@ -12,7 +12,7 @@ The author entertains the thought experiment of desigining a pleasing place to l
 His main argument, repeated a dozen ways in convincing photographs, is that streets ought to be narrow:
 
 <pre class="prose">
-The other side of the street should not feel like it is a world away - it should not be divided by a dangerous highway of heavy machinary. It should feel human-centric - safe, warm, inviting.  We should feel safe walking anywhere on the street. The street should not feel divided into a "left" and "right" side. We should feel like we are on the *entire* street. The secret to building these great warm homely-feeling places is so simple. The secret is to build narrow streets! That is all we have to do. 
+The other side of the street should not feel like it is a world away - it should not be divided by a dangerous highway of heavy machinery. It should feel human-centric - safe, warm, inviting.  We should feel safe walking anywhere on the street. The street should not feel divided into a "left" and "right" side. We should feel like we are on the *entire* street. The secret to building these great warm homely-feeling places is so simple. The secret is to build narrow streets! That is all we have to do. 
 </pre>
 
 <!-- MORE -->
