@@ -1,6 +1,6 @@
 ---
 title: Against Streets
-date: Wed Aug 13 09:09:37 EDT 2014
+date: Mon Sep  8 21:24:58 EDT 2014
 subblog: muse
 tags: human transit
 ---
