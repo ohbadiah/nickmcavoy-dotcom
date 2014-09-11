@@ -1,5 +1,5 @@
 ---
-title: Haskell or Bash, basically interchangeable
+title: Haskell and Bash, basically interchangeable
 subblog: tech
 tags: haskell
 ---
