@@ -106,17 +106,18 @@ main = hakyllWith hakyllConf $ do
         >>= fmap (take 10) . recentFirst
         >>= renderAtom (feedConf title) feedCtx
 
-  match "content/posts/*" $ do
-    route $ directorizeDate `composeRoutes` prefixWithSubblog `composeRoutes` stripContent `composeRoutes` setExtension "html"
-    compile $ do
-      compiled <- pandocHtml5Compiler
-      full <- loadAndApplyTemplate "templates/post.html" postTagsCtx compiled
-      teaser <- loadAndApplyTemplate "templates/post-teaser.html" postTagsCtx $ dropMore compiled
-      _ <- saveSnapshot "content" full
-      _ <- saveSnapshot "teaser" teaser
-      loadAndApplyTemplate "templates/default_subblog.html" (metadataField <> (postCtx tags) <> (field "subblogTitle" subblogTitleForItem)) full
-        >>= relativizeUrls
-        >>= deIndexUrls
+  match "content/posts/*" $ mapM_ (\subblog ->
+     do
+      route $ directorizeDate `composeRoutes` (prefixWithStr subblog) `composeRoutes` stripContent `composeRoutes` setExtension "html"
+      compile $ do
+        compiled <- pandocHtml5Compiler
+        full <- loadAndApplyTemplate "templates/post.html" postTagsCtx compiled
+        teaser <- loadAndApplyTemplate "templates/post-teaser.html" postTagsCtx $ dropMore compiled
+        _ <- saveSnapshot "content" full
+        _ <- saveSnapshot "teaser" teaser
+        loadAndApplyTemplate "templates/default_subblog.html" (metadataField <> (postCtx tags) <> (subblogCtx subblog)) full
+          >>= relativizeUrls
+          >>= deIndexUrls) ["asdf","fdsa"]
 
   match "content/index.md" $ do
     route $ stripContent `composeRoutes` setExtension "html"
@@ -206,26 +207,19 @@ deIndexedUrlField key = field key
 dropMore :: Item String -> Item String
 dropMore = fmap (unlines . takeWhile (/= "<!-- MORE -->") . lines)
 
-prefixWithSubblog :: Routes
-prefixWithSubblog = metadataRoute $ prefixWithStr . getSubblog
-
 prefixWithStr :: String -> Routes
 prefixWithStr s = customRoute $ (combine s) . toFilePath
 
-getSubblog :: Metadata -> String
-getSubblog = Map.findWithDefault (defaultSubblog siteConf) "subblog"
-
+getSubblogs :: Metadata -> [String]
+getSubblogs = words . Map.findWithDefault (defaultSubblog siteConf) "subblog"
 
 onlyItemsForSubblog :: (Functor m, MonadMetadata m) => String -> [Item a] -> m [Item a]
 onlyItemsForSubblog = filterItemsByMetadata . isSubblog  where
   filterItemsByMetadata :: (MonadMetadata m, Functor m) => (Metadata -> Bool) -> [Item a] -> m [Item a]
   filterItemsByMetadata p  = filterM ((fmap p) . getMetadata . itemIdentifier)
 
-subblogTitleForItem :: Item a -> Compiler String
-subblogTitleForItem = (fmap (subblogTitle . getSubblog)) . getMetadata . itemIdentifier
-
 isSubblog :: String -> Metadata -> Bool
-isSubblog s = (s ==) . getSubblog
+isSubblog s = any (s ==) .  getSubblogs
 
 subblogAboutPath :: String -> String
 subblogAboutPath = (++ "/about/index.html") . firstMatch "about/([a-zA-Z]+).md"
@@ -278,7 +272,7 @@ createSubblogAboutPages subblog =
 subblogCtx :: String -> Context String
 subblogCtx subblog =
   constField "subblog" subblog <>
-  constField "subblogTitle" (subblogTitle subblog) where
+  constField "subblogTitle" (titleForSubblog subblog) where
 
-subblogTitle :: String -> String
-subblogTitle s  = fromJust $ Map.lookup s (subBlogs siteConf)
+titleForSubblog :: String -> String
+titleForSubblog s  = fromJust $ Map.lookup s (subBlogs siteConf)
