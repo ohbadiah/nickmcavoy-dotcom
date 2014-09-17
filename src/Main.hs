@@ -26,6 +26,9 @@ siteConf = SiteConfiguration
   , defaultSubblog = "tech"
   }
 
+subblogNames :: [String]
+subblogNames = (Map.keys $ subBlogs siteConf)
+
 feedConf :: String -> FeedConfiguration
 feedConf title = FeedConfiguration
   { feedTitle = "Nick on Computing: " ++ title
@@ -106,7 +109,7 @@ main = hakyllWith hakyllConf $ do
         >>= fmap (take 10) . recentFirst
         >>= renderAtom (feedConf title) feedCtx
 
-  match "content/posts/*" $ mapM_ (\subblog ->
+  match "content/posts/*" $ forM_ subblogNames (\subblog ->
      do
       route $ directorizeDate `composeRoutes` (prefixWithStr subblog) `composeRoutes` stripContent `composeRoutes` setExtension "html"
       compile $ do
@@ -117,7 +120,7 @@ main = hakyllWith hakyllConf $ do
         _ <- saveSnapshot "teaser" teaser
         loadAndApplyTemplate "templates/default_subblog.html" (metadataField <> (postCtx tags) <> (subblogCtx subblog)) full
           >>= relativizeUrls
-          >>= deIndexUrls) ["asdf","fdsa"]
+          >>= deIndexUrls)
 
   match "content/index.md" $ do
     route $ stripContent `composeRoutes` setExtension "html"
@@ -138,7 +141,7 @@ main = hakyllWith hakyllConf $ do
         >>= loadAndApplyTemplate "templates/default.html" archiveCtx
         >>= relativizeUrls
 
-  forM_ (Map.keys $ subBlogs siteConf)
+  forM_ subblogNames
     (\subblog ->
       do
         processSubblogIndex tags subblog
@@ -219,7 +222,7 @@ onlyItemsForSubblog = filterItemsByMetadata . isSubblog  where
   filterItemsByMetadata p  = filterM ((fmap p) . getMetadata . itemIdentifier)
 
 isSubblog :: String -> Metadata -> Bool
-isSubblog s = any (s ==) .  getSubblogs
+isSubblog s = elem s . getSubblogs
 
 subblogAboutPath :: String -> String
 subblogAboutPath = (++ "/about/index.html") . firstMatch "about/([a-zA-Z]+).md"
