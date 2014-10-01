@@ -109,18 +109,18 @@ main = hakyllWith hakyllConf $ do
         >>= fmap (take 10) . recentFirst
         >>= renderAtom (feedConf title) feedCtx
 
-  match "content/posts/*" $ forM_ subblogNames (\subblog ->
-     do
-      route $ directorizeDate `composeRoutes` (prefixWithStr subblog) `composeRoutes` stripContent `composeRoutes` setExtension "html"
-      compile $ do
-        compiled <- pandocHtml5Compiler
-        full <- loadAndApplyTemplate "templates/post.html" postTagsCtx compiled
-        teaser <- loadAndApplyTemplate "templates/post-teaser.html" postTagsCtx $ dropMore compiled
-        _ <- saveSnapshot "content" full
-        _ <- saveSnapshot "teaser" teaser
-        loadAndApplyTemplate "templates/default_subblog.html" (metadataField <> (postCtx tags) <> (subblogCtx subblog)) full
-          >>= relativizeUrls
-          >>= deIndexUrls)
+  forM_ subblogNames (\sb ->
+    matchMetadata "content/posts/*" (isSubblog sb) $ version sb $ do
+        route $ directorizeDate `composeRoutes` ( prefixWithStr sb) `composeRoutes` stripContent `composeRoutes` setExtension "html"
+        compile $ do
+          compiled <- pandocHtml5Compiler
+          full <- loadAndApplyTemplate "templates/post.html" postTagsCtx compiled
+          teaser <- loadAndApplyTemplate "templates/post-teaser.html" postTagsCtx $ dropMore compiled
+          _ <- saveSnapshot "content" full
+          _ <- saveSnapshot "teaser" teaser
+          loadAndApplyTemplate "templates/default_subblog.html" (metadataField <> (postCtx tags) <> (subblogCtx sb)) full
+            >>= relativizeUrls
+            >>= deIndexUrls)
 
   match "content/index.md" $ do
     route $ stripContent `composeRoutes` setExtension "html"
