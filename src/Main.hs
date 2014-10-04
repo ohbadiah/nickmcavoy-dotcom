@@ -1,8 +1,8 @@
 {-# LANGUAGE OverloadedStrings #-}
 import Control.Applicative (Alternative (..))
 import Control.Monad (filterM, (>=>), forM_, liftM)
-import Data.List (intersperse, isSuffixOf)
-import Data.List.Split (splitOn)
+import Data.List (intersperse, intercalate, isSuffixOf)
+import Data.List.Split (splitOn, split, onSublist)
 import qualified Data.Map as Map
 import Data.Maybe (fromJust)
 import Data.Monoid (mappend, (<>))
@@ -28,6 +28,11 @@ siteConf = SiteConfiguration
 
 subblogNames :: [String]
 subblogNames = (Map.keys $ subBlogs siteConf)
+
+subSubblogInUrl :: String -> String -> String
+subSubblogInUrl subblog = concat . (map toThisSubblog) . (split (onSublist "/")) where
+  toThisSubblog :: String -> String
+  toThisSubblog s = if elem s subblogNames then subblog else s
 
 feedConf :: String -> FeedConfiguration
 feedConf title = FeedConfiguration
@@ -133,8 +138,9 @@ main = hakyllWith hakyllConf $ do
     route stripContent
     compile $ do
       let archiveCtx =
+            constField "title" "Archives" `mappend`
             field "posts" (\_ -> postList tags (recentFirst >=> pruneDuplicates)) `mappend`
-            constField "title" "Archives" `mappend` siteCtx
+            siteCtx
 
       makeItem ""
         >>= loadAndApplyTemplate "templates/archive.html" archiveCtx
@@ -172,10 +178,26 @@ postCtx tags =
   dateField "date" "%e %B %Y" `mappend`
   dateField "datetime" "%Y-%m-%d" `mappend`
   (tagsFieldWith' getTags) "tags" tags `mappend`
+  subblogLinksField "urls" `mappend`
   siteCtx
 
 itemMetadata :: MonadMetadata m => Item a -> m Metadata
 itemMetadata = getMetadata . itemIdentifier
+
+getSubblogs :: MonadMetadata m => Identifier -> m [String]
+getSubblogs identifier = do
+    metadata <- getMetadata identifier
+    return $ lookupSubblogs metadata
+
+subblogLinksField :: String -> Context a
+subblogLinksField key = field key $ \item ->
+  let identifier = itemIdentifier item in do
+  subblogs <- getSubblogs identifier
+  filePath <- fmap (toUrl . fromJust) $ getRoute identifier
+  let urls = map (\sb -> subSubblogInUrl sb filePath) subblogs
+  let urlsWithSbs = zip urls subblogs
+  let links = map (\(u,sb) -> "<a href=\"" ++ u ++ "\">" ++ sb ++ "</a>") urlsWithSbs
+  return $ intercalate " | " links
 
 itemsWithMetadata :: MonadMetadata m => [Item a] -> m [ItemWithMetadata a]
 itemsWithMetadata = mapM itemWithMetadata where
@@ -235,8 +257,8 @@ dropMore = fmap (unlines . takeWhile (/= "<!-- MORE -->") . lines)
 prefixWithStr :: String -> Routes
 prefixWithStr s = customRoute $ (combine s) . toFilePath
 
-getSubblogs :: Metadata -> [String]
-getSubblogs = words . Map.findWithDefault (defaultSubblog siteConf) "subblog"
+lookupSubblogs :: Metadata -> [String]
+lookupSubblogs = words . Map.findWithDefault (defaultSubblog siteConf) "subblog"
 
 onlyItemsForSubblog :: (Functor m, MonadMetadata m) => String -> [Item a] -> m [Item a]
 onlyItemsForSubblog = filterItemsByMetadata . isSubblog  where
@@ -244,7 +266,7 @@ onlyItemsForSubblog = filterItemsByMetadata . isSubblog  where
   filterItemsByMetadata p  = filterM ((fmap p) . itemMetadata)
 
 isSubblog :: String -> Metadata -> Bool
-isSubblog s = elem s . getSubblogs
+isSubblog s = elem s . lookupSubblogs
 
 subblogAboutPath :: String -> String
 subblogAboutPath = (++ "/about/index.html") . firstMatch "about/([a-zA-Z]+).md"
