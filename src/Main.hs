@@ -1,6 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
 import Control.Applicative (Alternative (..))
-import Control.Monad (filterM, (>=>), forM_)
+import Control.Monad (filterM, (>=>), forM_, liftM)
 import Data.List (intersperse, isSuffixOf)
 import Data.List.Split (splitOn)
 import qualified Data.Map as Map
@@ -88,7 +88,7 @@ main = hakyllWith hakyllConf $ do
 
     route idRoute
     compile $ do
-      list <- postList tags (\t -> recentFirst t >>= filterM (fmap (elem tag) . getTags . itemIdentifier))
+      list <- postList tags (\t -> (recentFirst >=> pruneDuplicates) t >>= filterM (fmap (elem tag) . getTags . itemIdentifier))
       let ctx =
             constField "tag" tag `mappend`
             constField "posts" list `mappend`
@@ -133,7 +133,7 @@ main = hakyllWith hakyllConf $ do
     route stripContent
     compile $ do
       let archiveCtx =
-            field "posts" (\_ -> postList tags recentFirst) `mappend`
+            field "posts" (\_ -> postList tags (recentFirst >=> pruneDuplicates)) `mappend`
             constField "title" "Archives" `mappend` siteCtx
 
       makeItem ""
@@ -173,6 +173,28 @@ postCtx tags =
   dateField "datetime" "%Y-%m-%d" `mappend`
   (tagsFieldWith' getTags) "tags" tags `mappend`
   siteCtx
+
+itemMetadata :: MonadMetadata m => Item a -> m Metadata
+itemMetadata = getMetadata . itemIdentifier
+
+itemsWithMetadata :: MonadMetadata m => [Item a] -> m [ItemWithMetadata a]
+itemsWithMetadata = mapM itemWithMetadata where
+  itemWithMetadata :: MonadMetadata m => Item a -> m (Item a, Metadata)
+  itemWithMetadata  i = liftM ((,) i) $ itemMetadata i
+
+type ItemWithMetadata a = (Item a, Metadata)
+
+pruneDuplicates :: MonadMetadata m => [Item a] -> m [Item a]
+pruneDuplicates = liftM ((map fst) . foldTossRepeats) . itemsWithMetadata where
+  foldTossRepeats :: [ItemWithMetadata a] -> [ItemWithMetadata a]
+  foldTossRepeats = foldr tossRepeatTitles []
+
+  tossRepeatTitles :: ItemWithMetadata a -> [ItemWithMetadata a] -> [ItemWithMetadata a]
+  tossRepeatTitles tup [] = [tup]
+  tossRepeatTitles tup@(_, m2) lst@((_, m1):_) =
+    if (Map.lookup "title" m1 == Map.lookup "title" m2)
+      then lst
+      else (tup : lst)
 
 postList :: Tags -> ([Item String] -> Compiler [Item String]) -> Compiler String
 postList tags sortFilter = do
@@ -219,7 +241,7 @@ getSubblogs = words . Map.findWithDefault (defaultSubblog siteConf) "subblog"
 onlyItemsForSubblog :: (Functor m, MonadMetadata m) => String -> [Item a] -> m [Item a]
 onlyItemsForSubblog = filterItemsByMetadata . isSubblog  where
   filterItemsByMetadata :: (MonadMetadata m, Functor m) => (Metadata -> Bool) -> [Item a] -> m [Item a]
-  filterItemsByMetadata p  = filterM ((fmap p) . getMetadata . itemIdentifier)
+  filterItemsByMetadata p  = filterM ((fmap p) . itemMetadata)
 
 isSubblog :: String -> Metadata -> Bool
 isSubblog s = elem s . getSubblogs
