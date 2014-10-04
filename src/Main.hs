@@ -280,7 +280,7 @@ createSubblogAboutPages subblog =
 
 subblogCtx :: String -> Context String
 subblogCtx subblog =
-  constField "subblog" subblog <>
+  constField "subblogName" subblog <>
   constField "subblogTitle" (titleForSubblog subblog) where
 
 titleForSubblog :: String -> String
