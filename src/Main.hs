@@ -158,7 +158,7 @@ main = hakyllWith hakyllConf $ do
     route idRoute
     compile $ do
       let feedCtx = postCtx tags `mappend` bodyField "description"
-      posts <- mapM deIndexUrls =<< fmap (take 10) . recentFirst =<<
+      posts <- mapM deIndexUrls =<< fmap (take 10) . (recentFirst >=> pruneDuplicates) =<<
         loadAllSnapshots "content/posts/*" "content"
       renderAtom (feedConf "blog") feedCtx (posts)
 
