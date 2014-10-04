@@ -28,9 +28,3 @@ defaultEngineConfiguration = EngineConfiguration
   }
   where
     modulePath = "lib/initializr/war/builder/modules/"
-
-data SiteConfiguration = SiteConfiguration
-  { siteRoot :: String
-  , subBlogs       :: Map.Map String String
-  , defaultSubblog :: String
-  }
