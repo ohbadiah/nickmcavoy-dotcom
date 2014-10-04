@@ -171,7 +171,6 @@ postCtx tags =
 itemMetadata :: MonadMetadata m => Item a -> m Metadata
 itemMetadata = getMetadata . itemIdentifier
 
-
 itemsWithMetadata :: MonadMetadata m => [Item a] -> m [ItemWithMetadata a]
 itemsWithMetadata = mapM itemWithMetadata where
   itemWithMetadata :: MonadMetadata m => Item a -> m (Item a, Metadata)
@@ -195,8 +194,8 @@ postList :: Tags -> ([Item String] -> Compiler [Item String]) -> Compiler String
 postList tags sortFilter = do
   posts <- sortFilter =<< loadAll "content/posts/*"
   itemTpl <- loadBody "templates/post-item.html"
-  list <- applyTemplateList itemTpl (postCtx tags) posts
-  return list
+  html <- applyTemplateList itemTpl (postCtx tags) posts
+  return $ (withUrls stripIndex) html
 
 stripContent :: Routes
 stripContent = gsubRoute "content/" $ const ""
