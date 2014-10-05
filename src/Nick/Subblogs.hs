@@ -2,7 +2,7 @@ module Nick.Subblogs where
 
 import Hakyll
 import Nick.SiteConf
-import Control.Monad (filterM)
+import Control.Monad (filterM, liftM)
 import Data.List (intercalate)
 import Data.List.Split (split, onSublist)
 import Data.Maybe (fromJust)
@@ -41,6 +41,4 @@ subblogLinksField key = field key $ \item ->
 
 -- | Get the subblogs an identifier is published in.
 getSubblogs :: MonadMetadata m => Identifier -> m [String]
-getSubblogs identifier = do
-    metadata <- getMetadata identifier
-    return $ lookupSubblogs metadata
+getSubblogs = (liftM lookupSubblogs) . getMetadata
