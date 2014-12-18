@@ -246,7 +246,7 @@ processSubblogIndex tags subblog =
     compile $ do
       postTpl <- loadBody "templates/post-item-full.html"
       body <- loadBody "templates/subblog-index.html"
-      loadAllSnapshots "content/posts/*" "teaser"
+      loadAllSnapshots ("content/posts/*" .&&. hasVersion subblog) "teaser"
         >>= fmap (take 100) . (recentFirst >=> (onlyItemsForSubblog subblog))
         >>= applyTemplateList postTpl (postCtx tags)
         >>= makeItem
@@ -262,7 +262,7 @@ createSubblogAtomFeed tags subblog =
     compile $ do
       let feedCtx = postCtx tags <> bodyField "description"
       posts <- mapM deIndexUrls =<< fmap (take 10) . (recentFirst >=> (onlyItemsForSubblog subblog)) =<<
-        loadAllSnapshots "content/posts/*" "content"
+        loadAllSnapshots ("content/posts/*" .&&. hasVersion subblog) "content"
       renderAtom (feedConf "blog") feedCtx (posts)
 
 createSubblogAboutPages :: String -> Rules ()

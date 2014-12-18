@@ -2,7 +2,6 @@
 module Metaplasm.Config where
 
 import Hakyll
-import qualified Data.Map as Map
 
 data EngineConfiguration = EngineConfiguration
   { lessCommand :: String

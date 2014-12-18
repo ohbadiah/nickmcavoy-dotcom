@@ -1,6 +1,5 @@
 module Nick.SiteConf where
 
-import Metaplasm.Config
 import qualified Data.Map as Map
 
 data SiteConfiguration = SiteConfiguration
