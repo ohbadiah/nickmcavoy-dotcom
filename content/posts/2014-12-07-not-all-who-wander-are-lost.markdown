@@ -17,6 +17,8 @@ Many find the notion that "Not all those who wander are lost" appealing, particu
 
 Surely it is not enough merely to assert that not all who wander are lost. After all, doing so acknowledges that perhaps most who wander *are* lost. The burden of proof is on he who would take the words to his lips. How is it, then, that one wanders and yet is not lost?
 
+<!-- MORE -->
+
 For myself I offer two answers. First, wherever I may wander, I am a Philadelphian. I am defined and shaped by that origin and I carry it with me wherever I go, most visibly in the form of a red baseball cap. When I go to New York I go as an unappointed emissary from Philadelphia seeking to be a gift from Philadelphia to New York. Places I wander are distinct else-wheres, not essentially indistinguishable as are two points on a blank sphere. I wander from home always with a mind to return to it.
 
 Even more significantly, all Christians are to understand themselves truly as pilgrims. A pilgrim is one who is not home but who is journeying in search of it. In other words pilgrims are wanderers, yet they are not lost.
