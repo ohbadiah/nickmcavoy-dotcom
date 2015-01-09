@@ -49,7 +49,7 @@ main = hakyllWith hakyllConf $ do
     route $ idRoute
     compile copyFileCompiler
 
-  match "content/img/*.jpg" $ do
+  match "content/img/*" $ do
     route $ stripContent
     compile copyFileCompiler
 
