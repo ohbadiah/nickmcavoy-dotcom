@@ -60,6 +60,7 @@ subblogs = ["muse", "yhwh", "nick", "tech", "food"]
 getSubblogFromUser :: IO String
 getSubblogFromUser = do
   ipt <- prompt "Which subblog is this post for?"
+  if (all (\w -> elem w subblogs) (words ipt)) then return ipt else do
   if (elem ipt subblogs) then return ipt else do
     putStrLn $ "Sorry, please give me one of: " ++ (unwords subblogs)
     getSubblogFromUser
