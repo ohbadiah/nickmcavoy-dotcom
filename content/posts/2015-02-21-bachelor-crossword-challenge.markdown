@@ -28,13 +28,13 @@ As you might expect, a lot had changed in five years. We didn't have hours toget
 
 The clues had us howling with laughter. Some examples (highlight to reveal the answer!):
 
-- 6 across: Powerthirst's promised progeny <span class="hidden">(400)</span>
-- 44 across: u wll shr ths plc w yr wf <span class="hidden">(br)</span>
-- 77 across: In theology, number of Who's in the one What <span class="hidden">(three)</span>
-- x4 across: Force sufficient to accelerate 10<sup>-18</sup> kg at 1 m/s2  <span class="hidden">(an)</span>
-- 7 down: Name of Brawl's predecessor, if it used clouds of dust to explain things <span class="hidden">(Mele)</span>
-- 34 down: You both blow up, but only he dies <span class="hidden">(worthit)</span>
-- X11 down: Muscle atop the shoulder. Also, Ackbar’s lament. <span class="hidden">(trap)</span>
+- 6 across: Powerthirst's promised progeny <span class="secret">(400)</span>
+- 44 across: u wll shr ths plc w yr wf <span class="secret">(br)</span>
+- 77 across: In theology, number of Who's in the one What <span class="secret">(three)</span>
+- x4 across: Force sufficient to accelerate 10<sup>-18</sup> kg at 1 m/s2  <span class="secret">(an)</span>
+- 7 down: Name of Brawl's predecessor, if it used clouds of dust to explain things <span class="secret">(Mele)</span>
+- 34 down: You both blow up, but only he dies <span class="secret">(worthit)</span>
+- X11 down: Muscle atop the shoulder. Also, Ackbar’s lament. <span class="secret">(trap)</span>
 
 There are 276 of these. Obviously we were a bunch of college-aged guys and we were extreme nerds, but looking beyond that I was surprised how significant the crossword really was. Far better than any photograph could have, it captured the intimacy we shared at that time. Our friendships were a great web of shared knowledge and mirth. It and the memory of the party also captured the love we had for one another. I hardly remember putting all of the work into this event that it must have been, and I can't imagine doing something like that with present constraints, but we did then and it seemed like no trouble.
 
