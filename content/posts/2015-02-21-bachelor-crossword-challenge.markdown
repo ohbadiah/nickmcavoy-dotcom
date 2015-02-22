@@ -1,7 +1,7 @@
 ---
 title: Bachelor Crossword Challenge
 subblog: nick
-tags: pilgrimage friendship
+tags: pilgrimage, friendship
 ---
 
 Bachelor party quests age like a fine wine. I learned that on Monday night.
