@@ -1,6 +1,6 @@
 ---
 title: Slowest Sunset, Missed
-subblog: muse, yhwh
+subblog: muse yhwh
 tags: travel, rants
 ---
 
