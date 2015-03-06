@@ -110,7 +110,7 @@ Thursday was the performance to Monday's dress rehearsal. Aunt Leesa and me drop
 
 Then it was coffee with Ben Wiebracht, the English literature PhD student at Stanford. I strolled around Palo Alto, interested by their public invitations to reflection. Some kind of utopia there all right; maybe I'll build one myself someday.
 
-The drive back from Palo Alto ws elysian. There was mist in the golden hills and the streams reflected in the valley and I had the windows down going 80 miles per hour. I went to my cousin-Boleses Bob and Christine next, talking with Christine on the couch over wine before going to see her son David's 3-D printer in the basement.
+The drive back from Palo Alto was elysian. There was mist in the golden hills and the streams reflected in the valley and I had the windows down going 80 miles per hour. I went to my cousin-Boleses Bob and Christine next, talking with Christine on the couch over wine before going to see her son David's 3-D printer in the basement.
 
 It was time for the last hurrah. The last hurrah turned out to be one last quart of raw milk before going abroad and one heck of a Peruvian meal at Fresca on West Portal. I've had "lomo saltado" ringing through my head all day.
 
