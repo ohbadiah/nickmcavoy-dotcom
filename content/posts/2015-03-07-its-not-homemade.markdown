@@ -8,7 +8,7 @@ It's a strike against a restaurant if they offer anything homemade.
 
 <!-- MORE -->
 
-Homemade means made at home. If you're a restaurant your food had better be made in your kitchen, where none of you had better be living. I'm pretty sure health department regulations prohibit that sort of thing.
+Homemade means made at home. If you're a restaurant your food had better be made in your kitchen, where you had better not be living. I'm pretty sure health department regulations prohibit that sort of thing.
 
 What is usually meant by such a declaration is that the food was made in the restaurant. Well, congratulations, that's what I thought I was paying you for. When I go to a concert I expect the musicians to be playing their own instruments, too.
 
