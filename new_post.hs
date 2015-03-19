@@ -3,10 +3,11 @@ import Data.Time
 import Data.Time.Clock (getCurrentTime, UTCTime)
 import Data.Set (Set, member, union, difference, fromList, toList)
 import Control.Monad (liftM)
+import System.IO (stdout, hFlush)
 
 -- | Prompt the user for input.
 prompt :: String -> IO String
-prompt query = putStr query' >> getLine where
+prompt query = putStr query' >> hFlush stdout >> getLine where
    query' = query ++ " "
 
 -- Read the system date into a string.
