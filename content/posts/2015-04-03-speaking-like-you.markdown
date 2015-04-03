@@ -14,7 +14,7 @@ This imitation extends even to talking with Koreans in English.
 
 <!-- MORE -->
 
-There are certain mannerisms, certain errors common to just about all Korean speakers of English. Most noticeable are errors with articles. Koreans often leave out indirect articles (*a*, *an*), and they also insert the direct article (*the*) when any article is incorrect. They might say "I have spatula" or "But now that it's the Good Friday..." The former class of error makes sense to me because Korean has no articles, but I don't understand where the latter comes from.
+There are certain mannerisms, certain errors common to just about all Korean speakers of English below a certain level of proficiency. Most noticeable are errors with articles. Koreans often leave out indirect articles (*a*, *an*), and they also insert the direct article (*the*) when any article is incorrect. They might say "I have spatula" or "But now that it's the Good Friday..." The former class of error makes sense to me because Korean has no articles, but I don't understand where the latter comes from.
 
 Regardless, I find I intentionally make the same errors when speaking with them. It's interesting to me that I do so because I am more of a linguistic prescriptivist by disposition. That is, I believe that these really are errors, and not some equally legitimate variant of English such as a Southern dialect. Evidently there is some value I hold more dearly than linguistic correctness, even though correct English is perfectly intelligible to my interlocutors and for all I know it might help them to speak more correctly.
 
