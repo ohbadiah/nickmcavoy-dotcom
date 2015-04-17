@@ -6,7 +6,7 @@ tags: Bible study
 
 In my church's Wednesday night Bible study we're currently reading through the entire Bible, starting with Genesis and presumably going the distance. This week was the third week and so we read the third book, Leviticus, perhaps the most infamous book in the whole library we call the Bible.
 
-Leviticus details the giving of the Law, the constitution by which Israel was to be a nation whose God was the <span class="smallcaps">Lord</span>. The thing is, the character of the Law does not always follow from what we intuitively believe to be character befitting of God. There's an awful lot of blood involved, what with all of the animal sacrifice. Restrictions in the face of leprosy or even menstruation seem harsh. And certain practices we find abhorrent are permitted if not actively endorsed.
+Leviticus details the giving of the Law, the constitution by which Israel was to be a nation whose God was the <span class="smallcaps">Lord</span>. The thing is, the character of the Law does not always follow from what we intuitively believe to be character befitting of God. There's an awful lot of blood involved, what with all of the animal sacrifice. Restrictions in the face of leprosy or even menstruation seem harsh. And certain practices we find abhorrent are permitted, though not actively endorsed.
 
 Chief among the latter is slavery. Shouldn't it have been prohibited outright? I tend to think so. But it's not, and that's an obstacle to viewing the Law in the same light as does the Psalmist:
 
@@ -31,11 +31,11 @@ and drippings of the honeycomb.
 Psalm 19:7-9
 </pre>
 
-Indeed, I think even the translators of the ESV get squeamish about it.
+Indeed, it might even appear that the translators of the ESV get squeamish about it.
 
 <!-- MORE -->
 
-Check out their translation of chapter 25:
+Check out their translation of chapter 25:39-43:
 
 <pre class="prose">
 If your brother becomes poor beside you and sells himself to you, you shall not make him serve as a slave: he shall be with you as a hired servant and as a sojourner. He shall serve with you until the year of jubilee. Then he shall go out from you, he and his children with him, and go back to his own clan and return to the possession of his fathers. For they are my servants,<sup>1</sup> whom I brought out of the land of Egypt; they shall not be sold as slaves. You shall not rule over him ruthlessly but shall fear your God.
@@ -55,4 +55,4 @@ In fact, I wonder if Israel's enslavement to God might actually be the key to un
 Leviticus 26:3-13
 </pre>
 
-So in return for his people's faithful obedience, God would shower them with blessing and dwell with them. An Israelite who paid this treatment forward to his slave might soon have not a slave but a brother before him. That thought makes Leviticus's toleration of slavery a little easier to bear.
+So in return for his people's faithful obedience, God would shower them with blessing and dwell with them. An Israelite who paid this treatment forward to his slave might soon have not a slave but a brother before him. That thought makes Leviticus's toleration of slavery in the very next verses of chapter 25 a little easier to bear.
