@@ -22,7 +22,7 @@ Holiness means something like being set apart or different. That doesn't quite c
 
 Our reaction to reading Leviticus might be that it must have been hard to live with God. There was an awful lot to remember and to do and to pay! The other side of the coin is that it took a lot for God to dwell with his people. This gap is God's holiness. He is not like us, fickle and subjective and frail and shifting and contradictory. He is unchanging and perfect.
 
-God would not merely overlook the failings of his people precisely because he is holy. One of his attributes does not overrule the others but rather he holds all fully and constantly. His love could not override his justice or else he would be unjust and therefore not God. 
+God would not merely overlook the failings of his people, precisely because he is holy. One of his attributes does not overrule the others but rather he holds all fully and constantly. His love could not override his justice or else he would be unjust and therefore not God. 
 
 Moreover it is a consistent principle of Scripture that what God commands, he also provides. 
 
