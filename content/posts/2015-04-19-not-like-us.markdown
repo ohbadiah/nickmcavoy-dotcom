@@ -16,7 +16,7 @@ Much of what is challenging about Leviticus can be grouped under a single headin
 
 What does holiness mean? There is a general idea in the culture which has mostly negative connotations, a mixture between hypocritical judgmentalism and never having fun. I think that's understandable because often those who have sought most to exhibit God's holiness have instead shown these traits. Pastor Choi mentioned in today's sermon that he used to call himself Holy Joe and shamelessly show forth what he thought was the holiness of God but what in restrospect was not at all.
 
-Holiness means something like being set apart or different. That doesn't quite capture it because as Pastor Choi said holiness is like love in that it needs to be demonstrated in order to really be understood. "By this we know love, that he laid down his life for us." By Leviticus we can learn a lot about God's holiness.
+Holiness means something like being set apart or different. That doesn't quite capture it because as Pastor Choi said holiness is like love in that it needs to be demonstrated in order to be really understood. "By this we know love, that he laid down his life for us." By Leviticus we can learn a lot about God's holiness.
 
 ### The view from the Tabernacle
 
