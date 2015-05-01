@@ -1,7 +1,7 @@
 ---
 title: You are what you ride.
 subblog: muse
-tags: biking, technology
+tags: biking, conquerors' toolkit
 ---
 
 It's cold outside. Going anywhere requires coming to terms with that.

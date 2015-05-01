@@ -9,7 +9,7 @@ Biycycles are inanimate, but there remains a deep affection of the rider for his
 
 I took my bike to the bike shop this weekend and it was cathartic. The bike was already in a shop, but I took it to Via Bicycle where they were more likely to have a matching fork in the event a replacement was necessary. To myself I jokingly called the move a "patient transfer."
 
-The owner of Via Bicycle reintroduced himself as Curtis, but with a moustache and a manner with a crowd of customers like his no reintroduction was necessary. Curtis lives up to this image, too; it's not an exaggeratin to call him a bicycle sage. 
+The owner of Via Bicycle reintroduced himself as Curtis, but with a moustache and a manner with a crowd of customers like his no reintroduction was necessary. Curtis lives up to this image, too; it's not an exaggeration to call him a bicycle sage. 
 
 Curtis put my bike on a stand and told me about its damage, his eyes finding in a minute what others' instruments had missed. This after the car accident that put me out of commission for almost five months.
 
