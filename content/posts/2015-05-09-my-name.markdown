@@ -1,0 +1,37 @@
+---
+title: My Name
+subblog: nick
+tags: identity
+---
+
+It turns out this is who I am:
+
+![Mom and Dad didn't know they were giving this to me.](/img/my-name.png)
+
+There are a few other ways you can represent it:
+
+- Typed in Chinese: 林勝護
+- In Korean writing: 임승호
+- Pronouncing the characters [in Chinese](/extra/my-name.mp3)
+- English transliteration: Lim Seung-ho
+- Translating back to English: Nicholas Alexander McAvoy
+
+That last one might seem a leap to you. Allow me to explain.
+
+<!-- MORE -->
+
+First, why. It's useful to have a Korean name in Korea. Names have a certain structure here and there are situations where that structure is assumed and your foreigner name might not really fit. As horrible as Korean names often look when transliterated to English, English names look about as bad. If you really tried to write my full name it would be something like 니콜라스 알렉산더 매카보이, a far cry from the 3 syllables allowed Korean names. It just doesn't compute. Mostly I just go by 닉, "nik."
+
+Second, how. Most of Korean vocabulary is rooted in Chinese, including names. So any Korean name will have a Chinese representation, pronunciation, and meaning. So in some respects finding a Korean name means finding a Chinese name.
+
+In doing this I can think of two approaches: phonetic or meaning-based. My friend Matthew solved this problem rather beautifully from the phonetic route when he married my friend Linshuang. They went with a name written in English as Ma Xiu that means something like "little fix-it man." That sounds like his English name and describes him well, too.
+
+The phonetic approach wasn't going to work for me. My name just wouldn't contract to two syllables. So we looked at meaning: could we find a name that means the same in Chinese as my name means in its original languages?
+
+Third, what. It turns out "Nicholas" means something like "victory for the people." 승(seung) means victory and is commonly used in names. 민 (min) means people, and so 승민, a real Korean name, could be considered a translation of Nicholas.
+
+"Alexander" means "defender of men." 호 (ho) means to protect, so 호민 or 민호 could be considered Alexander in Korean. 민호 (Min-ho) is actually a very typical name for a Korean man.
+
+So 승호 takes "victory" from Nicholas and "defense" from Alexander. As for my last name, it seems McAvoy may originally have meant "son of (Mc) the woodman (Avoy)." 임 (Lim) refers to a forest. I think this is doubly appropriate because my dad was such a man of nature and the woods, and I myself feel most at home in the forest. I am truly the son of the woodman.
+
+Put it all together and you get 임승호, Seung-ho Lim! Thanks, Mom! And thanks to my friends Jinhee and Dora who figured this all out for me.
