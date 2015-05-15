@@ -1,7 +1,7 @@
 ---
 title: I love this bag.
 subblog: nick
-tags: engineering the mundane
+tags: expression
 ---
 
 I love this bag.
