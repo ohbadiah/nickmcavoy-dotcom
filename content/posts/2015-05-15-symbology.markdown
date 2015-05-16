@@ -4,7 +4,7 @@ subblog: muse nick
 tags: expression
 ---
 
-I should start by saying this is a blog, and true to the form I'm writing about something about which I know barely the first. Please feel free to enlighten me in the comments.<span class="until-comments"><sup>1</sup></span>
+I should start by saying this is a blog, and true to the form I'm writing about something about which I know barely the first thing. Please feel free to enlighten me in the comments.<span class="until-comments"><sup>1</sup></span>
 
 In the last couple of years I've wanted to up my game with regard to my self-presentation. For most of my life I've tried to say as little as possible with my dress and so forth, nothing beyond "decent fellow I suppose. Seems trustworthy." Lately I wonder if I can do better.
 
@@ -28,7 +28,7 @@ From these symbols we're under constant bombardment. The bombardment is quite su
 
 The result is that observers think the symbols I've chosen to adorn myself with are derived from this same indirect arena of advertising and brand loyalty rather than being directly of my choosing. Maybe it looks like I'm investing in some hipster brand in an attempt to convey originality, which I suppose isn't so very far from the truth, but virtually no one realizes there's no brand, no corporate or monetary interest being represented at all. The cacophany of the advertisers drowns out my subtle speech, or so I'd like to think.
 
-There is one exception to this void, one way that people do commonly express themselves through symbology: tattoos. I'm thinking of my friend Zach's Papua New Guinea bird of paradise on his right shoulder that is your first clue he's not just another white guy from Minnesota. Now the thing about tattoos is they are usually discreet; you wouldn't see Zach's bird unless his torso manfully burst out of his tank while he was sparring or something like that. The nice thing about symbology through apparel is the symbols are quite public and easy to rotate in different situations or as ideologies develop. Personally I wouldn't get a tattoo as a simple matter of conscience, but I think when done well this is much the sort of expression I'd hope to see.
+There is one exception to this void, one way that people do commonly express themselves through symbology: tattoos. I'm thinking of my friend [Zach](https://dealingwithshit.wordpress.com/)'s Papua New Guinea bird of paradise on his right shoulder that is your first clue he's not just another white guy from Minnesota. Now the thing about tattoos is they are usually discreet; you wouldn't see Zach's bird unless his torso manfully burst out of his tank while he was sparring or something like that. The nice thing about symbology through apparel is the symbols are quite public and easy to rotate in different situations or as ideologies develop. Personally I wouldn't get a tattoo as a simple matter of conscience, but I think when done well this is much the sort of expression I'd hope to see.
 
 I'm just getting started employing symbology. As I go along I hope I get better at it.
 
