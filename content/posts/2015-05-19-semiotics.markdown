@@ -46,5 +46,3 @@ Additionally, the proprietors are about my age, not nearly as old or as wise as 
 As further illustration of this principle, the first thing I was told after seeing the "walk-ins welcome" placard on the sidewalk and entering was that they require reservations. "But it says walk-ins!" I protested. The barber who received me suppressed a laugh and, after deliberating, asked if I would be willing to wait 20 minutes before my haircut. 20 minutes! That's standard practice in the barber shop as I knew it growing up. Of course I would have no problem waiting; waiting is almost part of the point when the shop is functioning as intended.
 
 So indeed, the symbols used in the barber shop mean nothing in themselves. To understand them requires considerable shared context. I had to really dig deep to try to understand everything. By the end I was just hoping the prices posted on the wall were accurate (they were). The result was one of the best haircuts I've ever had and a new friend in my barber, who was far from the barbar the room indicated.
-
-I will do well to understand these principles if I really seek to be understood by way of symbololgy.
