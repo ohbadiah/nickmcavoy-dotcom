@@ -43,7 +43,7 @@ I believe it is aspects of this tradition that the Outro is trying access in Kor
 
 Additionally, the proprietors are about my age, not nearly as old or as wise as Mr. Jugan, and sadly they may not know a better masculinity than conveyed by these symbols.
 
-As further illustration of this principle, the first thing I was told after seeing the "walk-ins welcome" placard on the sidewalk and entering was that they require reservations. "But it says walk-ins!" I protested. The barber who received me suppressed a laugh and, after deliberating, asked if I would be willing to wait 20 minutes before my haircut. 20 minutes! That's standard practice in the barber shop as I knew it growing up. Of course I would have no problem waiting; waiting is almost part of the point when functioning as intended.
+As further illustration of this principle, the first thing I was told after seeing the "walk-ins welcome" placard on the sidewalk and entering was that they require reservations. "But it says walk-ins!" I protested. The barber who received me suppressed a laugh and, after deliberating, asked if I would be willing to wait 20 minutes before my haircut. 20 minutes! That's standard practice in the barber shop as I knew it growing up. Of course I would have no problem waiting; waiting is almost part of the point when the shop is functioning as intended.
 
 So indeed, the symbols used in the barber shop mean nothing in themselves. To understand them requires considerable shared context. I had to really dig deep to try to understand everything. The result was one of the best haircuts I've ever had and a new friend in my barber, who was far from the barbar the room indicated.
 
