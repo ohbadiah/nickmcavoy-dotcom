@@ -6,7 +6,7 @@ tags: expression, all peoples
 
 I got a few comments about [my last post](/muse/posts/2015/05/15/symbology/). In the picture of me in the barber chair, everyone I heard from noticed another symbol more than those I intended to highlight:
 
-![No, not the bra hanging there.](/img/symbology.jpg)
+![A picture worth a thousand words](/img/symbology.jpg)
 
 I'm referring to the knife. I hadn't thought much of the knife, and that highlights some interesting points about symbology, or semiotics as I've learned it's more formally called.
 
