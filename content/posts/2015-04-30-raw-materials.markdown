@@ -1,7 +1,7 @@
 ---
 title: Raw Materials
 subblog: food
-tags: cooking
+tags: cooking, conquerors' toolkit
 ---
 
 I crave simplicity. But it's a different kind of simplicity than sells well.
