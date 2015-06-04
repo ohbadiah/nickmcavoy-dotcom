@@ -1,7 +1,7 @@
 ---
 title: Haskell and Bash, basically interchangeable
 subblog: tech
-tags: haskell
+tags: Haskell
 ---
 
 It's not often you get to spend way longer than warranted on a grand rewrite.
