@@ -1,6 +1,6 @@
 ---
 title: Raw Milk
-subblog: food, nick
+subblog: food nick
 tags: particular foods, identity
 ---
 
