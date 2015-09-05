@@ -20,4 +20,6 @@ In just a few moments I walked toward Walnut Street as the light was green. A ma
 
 Then I remembered that traffic lights are only red for an utterly inconsequential amount of time, and I did not need to knock the man over in order to fulfill what was required of me.
 
+I've hung out at a coffee shop this afternoon. This shop does a great job creating an atmosphere that conveys an important truth: being is an end in itself. It does not require doing in order to justify itself.
+
 As you can see, I've been in pretty deep. This decompression is going to be glorious.
